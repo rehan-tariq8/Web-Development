@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savora</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Savora.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"
+                style="font-family: 'Bitter',sans-serif; font-weight: 600; font-size: 25px;">Savora</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-items">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="mainDropdown" role="button"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Dropdown
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="mainDropdown">
+                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+
+                            <!-- Deep dropdown -->
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="deepDropdown"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Deep Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="deepDropdown">
+                                    <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn text-light book-button mt-2" type="submit">Book a Table</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid hero p-5">
+        <div class="container pt-5 mt-5">
+            <div class="row mt-5">
+                <div class="col-6 mt-5">
+                    <h1 class="head">
+                        Savor Authentic Mediterranean Cuisine
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Experience the rich flavors of traditional Mediterranean cooking
+                        in an elegant atmosphere.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn btn-outline-success text-light books-button " type="submit">BOOK A
+                            TABLE</button>
+                        <button type="button" class="btn btn-outline-primary menu-button mx-2">VIEW MENU</button>
+                    </div>
+
+                    <div class="row mt-5">
+                        <!-- Timing-->
+                        <div class="col-6 d-flex">
+                            <div class="col-2 d-flex justify-content-center align-items-center" style="color: #eb5f2d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 15 15">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M7.5.877a6.623 6.623 0 1 0 0 13.246A6.623 6.623 0 0 0 7.5.877ZM1.827 7.5a5.673 5.673 0 1 1 11.346 0a5.673 5.673 0 0 1-11.346 0ZM8 4.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .146.354l2 2a.5.5 0 0 0 .708-.708L8 7.293V4.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="col-8 mx-1" style="line-height: 0;">
+                                <p class="text-muted">OPEN DAILY</p>
+                                <h6>11:00 AM - 10:30 PM</h6>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="col-6 d-flex">
+                            <div class="col-2 d-flex justify-content-center align-items-center" style="color: #eb5f2d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 21 21">
+                                    <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" transform="translate(4 2)">
+                                        <path
+                                            d="m6.5 16.54l.631-.711c.716-.82 1.36-1.598 1.933-2.338l.473-.624c1.975-2.661 2.963-4.773 2.963-6.334C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033c0 1.561.988 3.673 2.963 6.334l.473.624a54.84 54.84 0 0 0 2.564 3.05z" />
+                                        <circle cx="6.5" cy="6.5" r="2.5" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="col-10 mx-1" style="line-height: 0;">
+                                <p class="text-muted">LOCATION</p>
+                                <h6>Downtown Culinary District</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Images -->
+                <div class="col-6">
+                    <div class="position-relative d-inline-block w-100" style="max-width: 900px;">
+
+                        <!-- Main Image -->
+                        <img src="showcase-2.png" class="img-fluid rounded-4 shadow w-100 h-100"
+                            style="border-radius: 10px;" alt="Main Dining">
+                        <!-- Top-right small image -->
+                        <img src="main-4.png" class="position-absolute top-0 end-0 translate-middle-y me-2 mt-2 
+                rounded-4 shadow d-none d-sm-block"
+                            style="width: 25%; height: 40%; max-width: 180px; border-radius: 10px; border: 5px solid white;"
+                            alt="Dish 1">
+
+                        <!-- Bottom-left small image -->
+                        <img src="main-2.png" class="position-absolute bottom-0 start-0 translate-middle-x mb-2 ms-2 
+                rounded-4 shadow d-none d-sm-block"
+                            style="width: 25%; height: 40%; border-radius: 10px; border: 5px solid white; max-width: 180px;"
+                            alt="Dish 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-white">
+        <div class="container pt-5 Executive">
+            <div class="row">
+                <div class="col-6 pt-5 mt-5">
+                    <img src="chef-3.png" alt="Executive Cehf" class="img-thumbnail">
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-light text-center fs-3 fw-bold">25+</h5>
+                            <h6 class="card-subtitle  mb-2 text-light text-center fw-normal">Years of Culinary
+                                Excellence</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-4">
+                    <h2 class="long-text">Meet Our Executive Chef</h2>
+                    <p class="text-justify short-text">Crafting memorable dining experiences since 1999</p>
+                    <p class="text-justify" style="font-size: 16px; line-height: 2;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                    <!-- Speciality -->
+                    <div class="row mt-5">
+                        <!-- Award-->
+                        <div class="col-6 d-flex">
+                            <div class="col-2 d-flex justify-content-center align-items-center" style="color: #eb5f2d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="m328.375 384l3.698 74.999l-75.862-52.719l-76.287 52.769L183.625 384h-32.039l-5.522 112h36.692l73.413-50.78L329.242 496h36.694l-5.522-112h-32.039zm87.034-229.086l-2.194-48.054L372.7 80.933l-25.932-40.519l-48.055-2.2L256 16.093l-42.713 22.126l-48.055 2.2L139.3 80.933L98.785 106.86l-2.194 48.054l-22.127 42.714l22.127 42.715l2.2 48.053l40.509 25.927l25.928 40.52l48.055 2.195L256 379.164l42.713-22.126l48.055-2.195l25.928-40.52l40.518-25.923l2.195-48.053l22.127-42.715Zm-31.646 76.949L382 270.377l-32.475 20.78l-20.78 32.475l-38.515 1.76L256 343.125l-34.234-17.733l-38.515-1.76l-20.78-32.475L130 270.377l-1.759-38.514l-17.741-34.235l17.737-34.228L130 124.88l32.471-20.78l20.78-32.474l38.515-1.76L256 52.132l34.234 17.733l38.515 1.76l20.78 32.474L382 124.88l1.759 38.515l17.741 34.233Z" />
+                                </svg>
+                            </div>
+                            <div class="col-8 mx-1 mt-2">
+                                <h6>James Beard Award</h6>
+                            </div>
+                        </div>
+                        <!-- Recognition -->
+                        <div class="col-6 d-flex">
+                            <div class="col-2 d-flex justify-content-center align-items-center" style="color: #eb5f2d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M21.995 9.933a.5.5 0 0 0-.423-.568l-6.304-.919l-2.82-5.73a.52.52 0 0 0-.896 0l-2.82 5.73l-6.304.92a.5.5 0 0 0-.278.852l4.563 4.46l-1.077 6.3a.5.5 0 0 0 .726.527L12 18.532l5.638 2.973a.506.506 0 0 0 .316.05a.5.5 0 0 0 .41-.576l-1.077-6.3l4.563-4.461a.5.5 0 0 0 .145-.285zM16.4 14.147a.501.501 0 0 0-.143.442l.95 5.558l-4.974-2.623a.506.506 0 0 0-.466 0l-4.974 2.623l.95-5.558a.501.501 0 0 0-.143-.442L3.572 10.21l5.565-.81a.501.501 0 0 0 .376-.275L12 4.07l2.487 5.054a.5.5 0 0 0 .376.274l5.565.811l-4.028 3.938z" />
+                                </svg>
+                            </div>
+                            <div class="col-10 mx-1 mt-2">
+                                <h6>Michelin Recognition</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote -->
+                    <section>
+                        <div class="container mt-5 h-100">
+                            <div class="row d-flex align-items-center h-100">
+                                <div class="col col-lg-12 mb-4 mb-lg-0">
+                                    <figure class="p-3"
+                                        style="border-left: .25rem solid #eb5f2d; background-color: #fef7f4; border-radius: 15px;">
+                                        <blockquote class="blockquote pb-2">
+                                            <p style="font-size: 16px; font-weight: 400;"><i>
+                                                    "Cooking is not just about feeding people; it's about creating
+                                                    moments
+                                                    that bring families and friends together around the table."
+                                                </i></p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer mb-0 font-italic text-dark fw-bold">
+                                            Chef Alessandro Romano
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="mt-4">
+                        <button class="btn btn-outline-success text-light  " type="submit"
+                            style="background-color: #eb5f2d; border: none; width: 150px; height: 50px; font-weight:500">View
+                            Menu</button>
+                        <button type="button" class="btn btn-outline-primary  mx-2"
+                            style="color: #eb5f2d; border: 2px solid #eb5f2d; width: 150px; height: 50px; font-weight:500">Book
+                            a Table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Cards -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="showcase-2.png" height="238px" class="card-img" alt="showcase-2">
+                    <div class="card-img-overlay text-light mt-5 pt-5">
+                        <h5 class="card-title mt-5">Elegant Dinning</h5>
+                        <p class="card-text">Sophisticated ambiance for every occasion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="main-4.png" class="card-img" alt="showcase-2">
+                    <div class="card-img-overlay text-light mt-5 pt-5">
+                        <h5 class="card-title mt-5">Signature Dishes</h5>
+                        <p class="card-text">Artfully crafted seasonal specialties</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="misc-7.png" alt="showcase-2">
+                    <div class="card-img-overlay text-light mt-5 pt-5">
+                        <h5 class="card-title mt-5">Curated Wine</h5>
+                        <p class="card-text">Exceptional pairings from around the world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container mb-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <h2 class="mt-5 pt-5" style="font-family: 'Bitter', sans-serif; font-weight: 700; text-align: center;">
+                    Menu
+                </h2>
+                <hr width="100px" style="margin: 0 auto; border: none; height: 2px; background-color: #eb5f2d;">
+                <hr width="200px" style="margin: 0 auto;">
+                <p class="mt-3" style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                    sint
+                    consectetur velit</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Tabs navs -->
+            <ul class="nav nav-pills mb-3 justify-content-center menu-tabs" id="ex-with-icons" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a data-bs-toggle="pill" class="nav-link active" id="ex-with-icons-tab-1"
+                        href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1"
+                        aria-selected="true">
+                        <i class="fas fa-cookie me-2"></i> Starters
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a data-bs-toggle="pill" class="nav-link" id="ex-with-icons-tab-2" href="#ex-with-icons-tabs-2"
+                        role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="false">
+                        <i class="fas fa-mug-hot me-2"></i> Main Courses
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a data-bs-toggle="pill" class="nav-link" id="ex-with-icons-tab-3" href="#ex-with-icons-tabs-3"
+                        role="tab" aria-controls="ex-with-icons-tabs-3" aria-selected="false">
+                        <i class="fas fa-birthday-cake me-2"></i> Desserts
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a data-bs-toggle="pill" class="nav-link" id="ex-with-icons-tab-4" href="#ex-with-icons-tabs-4"
+                        role="tab" aria-controls="ex-with-icons-tabs-4" aria-selected="false">
+                        <i class="fas fa-coffee me-2"></i> Beverages
+                    </a>
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex-with-icons-content">
+
+                <!-- Tab 1: Starters -->
+                <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
+                    aria-labelledby="ex-with-icons-tab-1">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card items">
+                                <img src="starter-6.png" class="card-img-top" alt="starter-1">
+                                <div class="card-body mt-2 mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Crispy Calamari Rings</h5>
+                                        <div class="svg">
+                                            <div class="circle"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 56 56">
+                                                <path fill="currentColor"
+                                                    d="M8.125 37.398c0 9.516 7.781 16.243 18.75 16.243c12.445 0 21-8.04 21-21.258c0-20.625-18.094-30.024-31.289-30.024c-2.086 0-3.117 1.032-3.117 2.227c0 .96.515 1.758 1.289 2.86c1.875 2.577 5.062 6.327 5.062 11.038c0 .399-.023.797-.07 1.22c-1.312-2.462-3.633-4.196-6.445-4.196c-.797 0-1.219.469-1.219 1.148c0 .82.187 1.407.187 3.961c0 4.899-4.148 8.203-4.148 16.781m19.219 9.657c-4.688 0-7.805-2.836-7.805-7.055c0-4.43 3.14-6 3.563-8.86c.023-.234.187-.304.351-.14c1.172 1.008 1.899 2.273 2.461 3.727c.117.257.305.28.422.07c1.289-2.25 1.523-5.602 1.219-9.82c-.047-.235.117-.352.328-.258c5.555 2.531 8.39 8.039 8.39 12.984c0 4.969-2.93 9.352-8.93 9.352" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                                        do
+                                        eiusmod tempor incididunt ut labore</p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$18</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="starter-3.png" class="card-img-top" alt="starter-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Truffle Arancini</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2 21q1-6 6-7t6-3m5-9q-2 4-8 4a1 1 0 0 0 0 14a10 11 0 0 0 8-18" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Ut enim ad minim veniam quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$16</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="starter-5.png" class="card-img-top" alt="starter-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Salmon Ceviche</h5>
+                                        <div class="svg">
+                                            <div class="circle2"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 1024 1024">
+                                                <path fill="currentColor"
+                                                    d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Duis aute irure dolor in reprehenderit in voluptate
+                                        velit
+                                        esse
+                                        cillum dolore eu fugiat nulla
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$22</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="starter-7.png" class="card-img-top" alt="starter-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Beef Tartare</h5>
+                                        <div class="svg">
+                                            <div class="circle3"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 26 26">
+                                                <path fill="currentColor"
+                                                    d="M25.326 10.137a1.001 1.001 0 0 0-.807-.68l-7.34-1.066l-3.283-6.651c-.337-.683-1.456-.683-1.793 0L8.82 8.391L1.48 9.457a1 1 0 0 0-.554 1.705l5.312 5.178l-1.254 7.31a1.001 1.001 0 0 0 1.451 1.054L13 21.252l6.564 3.451a1 1 0 0 0 1.451-1.054l-1.254-7.31l5.312-5.178a.998.998 0 0 0 .253-1.024z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Excepteur sint occaecat cupidatat non proident sunt in
+                                        culpa
+                                        qui officia deserunt mollit anim
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$28</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Main Courses -->
+                <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel"
+                    aria-labelledby="ex-with-icons-tab-2">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card items">
+                                <img src="main-2.png" class="card-img-top" alt="main-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Grilled Ribeye Steak</h5>
+                                        <div class="svg">
+                                            <div class="circle3"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 26 26">
+                                                <path fill="currentColor"
+                                                    d="M25.326 10.137a1.001 1.001 0 0 0-.807-.68l-7.34-1.066l-3.283-6.651c-.337-.683-1.456-.683-1.793 0L8.82 8.391L1.48 9.457a1 1 0 0 0-.554 1.705l5.312 5.178l-1.254 7.31a1.001 1.001 0 0 0 1.451 1.054L13 21.252l6.564 3.451a1 1 0 0 0 1.451-1.054l-1.254-7.31l5.312-5.178a.998.998 0 0 0 .253-1.024z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Sed ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem
+                                        accusantium doloremque laudantium
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$45</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="main-4.png" class="card-img-top" alt="main-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Pan-Seared Salmon</h5>
+                                        <div class="svg">
+                                            <div class="circle2"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 1024 1024">
+                                                <path fill="currentColor"
+                                                    d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Totam rem aperiam eaque ipsa quae ab illo inventore
+                                        veritatis
+                                        et quasi architecto beatae vitae
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$38</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="main-6.jpg" class="card-img-top" alt="main-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Lobster Ravioli</h5>
+                                        <div class="svg">
+                                            <div class="circle3"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 26 26">
+                                                <path fill="currentColor"
+                                                    d="M25.326 10.137a1.001 1.001 0 0 0-.807-.68l-7.34-1.066l-3.283-6.651c-.337-.683-1.456-.683-1.793 0L8.82 8.391L1.48 9.457a1 1 0 0 0-.554 1.705l5.312 5.178l-1.254 7.31a1.001 1.001 0 0 0 1.451 1.054L13 21.252l6.564 3.451a1 1 0 0 0 1.451-1.054l-1.254-7.31l5.312-5.178a.998.998 0 0 0 .253-1.024z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Nemo enim ipsam voluptatem quia voluptas sit
+                                        aspernatur
+                                        aut
+                                        odit aut fugit sed quia consequuntur</p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$42</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="main-8.jpg" class="card-img-top" alt="main-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Mushroom Risotto</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2 21q1-6 6-7t6-3m5-9q-2 4-8 4a1 1 0 0 0 0 14a10 11 0 0 0 8-18" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Magni dolores eos qui ratione voluptatem sequi
+                                        nesciunt
+                                        neque
+                                        porro quisquam est qui dolorem
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$32</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Desserts -->
+                <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel"
+                    aria-labelledby="ex-with-icons-tab-3">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card items">
+                                <img src="dessert-2.jpg" class="card-img-top" alt="dessert-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2 21q1-6 6-7t6-3m5-9q-2 4-8 4a1 1 0 0 0 0 14a10 11 0 0 0 8-18" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Ipsum quia dolor sit amet consectetur adipiscing elit
+                                        sed
+                                        do
+                                        eiusmod tempor incididunt
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$14</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="dessert-5.png" class="card-img-top" alt="dessert-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Crème Brûlée</h5>
+                                        <div class="svg">
+                                            <div class="circle2"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 1024 1024">
+                                                <path fill="currentColor"
+                                                    d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Ut labore et dolore magna aliqua ut enim ad minim
+                                        veniam
+                                        quis
+                                        nostrud exercitation ullamco
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$12</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="dessert-7.jpg" class="card-img-top" alt="dessert-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Tiramisu</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2 21q1-6 6-7t6-3m5-9q-2 4-8 4a1 1 0 0 0 0 14a10 11 0 0 0 8-18" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Laboris nisi ut aliquip ex ea commodo consequat duis
+                                        aute
+                                        irure
+                                        dolor in reprehenderit
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$13</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="dessert-9.jpg" class="card-img-top" alt="dessert-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Seasonal Fruit Tart</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2">
+                                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0" />
+                                                    <path
+                                                        d="M12 2a3 3 0 0 1 3 3c0 .562-.259 1.442-.776 2.64L13.5 9l1.76-1.893c.499-.6.922-1 1.27-1.205a2.968 2.968 0 0 1 4.07 1.099a3.011 3.011 0 0 1-1.09 4.098c-.374.217-.99.396-1.846.535L15 12l2.4.326c1 .145 1.698.337 2.11.576A3.011 3.011 0 0 1 20.6 17a2.968 2.968 0 0 1-4.07 1.098c-.348-.202-.771-.604-1.27-1.205L13.5 15l.724 1.36C14.74 17.559 15 18.439 15 19a3 3 0 0 1-6 0c0-.562.259-1.442.776-2.64L10.5 15l-1.76 1.893c-.499.601-.922 1-1.27 1.205A2.968 2.968 0 0 1 3.4 17a3.011 3.011 0 0 1 1.09-4.098c.374-.218.99-.396 1.846-.536L9 12l-2.4-.325c-1-.145-1.698-.337-2.11-.576A3.011 3.011 0 0 1 3.4 7a2.968 2.968 0 0 1 4.07-1.099c.348.203.771.604 1.27 1.205L10.5 9C9.5 6.708 9 5.375 9 5a3 3 0 0 1 3-3z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">In voluptate velit esse cillum dolore eu fugiat nulla
+                                        pariatur
+                                        excepteur sint occaecat
+                                    </p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$11</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Beverages -->
+                <div class="tab-pane fade" id="ex-with-icons-tabs-4" role="tabpanel"
+                    aria-labelledby="ex-with-icons-tab-4">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card items">
+                                <img src="drink-3.jpg" class="card-img-top" alt="drink-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Signature Cocktail</h5>
+                                        <div class="svg">
+                                            <div class="circle"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 56 56">
+                                                <path fill="currentColor"
+                                                    d="M8.125 37.398c0 9.516 7.781 16.243 18.75 16.243c12.445 0 21-8.04 21-21.258c0-20.625-18.094-30.024-31.289-30.024c-2.086 0-3.117 1.032-3.117 2.227c0 .96.515 1.758 1.289 2.86c1.875 2.577 5.062 6.327 5.062 11.038c0 .399-.023.797-.07 1.22c-1.312-2.462-3.633-4.196-6.445-4.196c-.797 0-1.219.469-1.219 1.148c0 .82.187 1.407.187 3.961c0 4.899-4.148 8.203-4.148 16.781m19.219 9.657c-4.688 0-7.805-2.836-7.805-7.055c0-4.43 3.14-6 3.563-8.86c.023-.234.187-.304.351-.14c1.172 1.008 1.899 2.273 2.461 3.727c.117.257.305.28.422.07c1.289-2.25 1.523-5.602 1.219-9.82c-.047-.235.117-.352.328-.258c5.555 2.531 8.39 8.039 8.39 12.984c0 4.969-2.93 9.352-8.93 9.352" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Cupidatat non proident sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum</p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$16</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="drink-6.jpg" class="card-img-top" alt="drink-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Fresh Fruit Smoothie</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2">
+                                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0" />
+                                                    <path
+                                                        d="M12 2a3 3 0 0 1 3 3c0 .562-.259 1.442-.776 2.64L13.5 9l1.76-1.893c.499-.6.922-1 1.27-1.205a2.968 2.968 0 0 1 4.07 1.099a3.011 3.011 0 0 1-1.09 4.098c-.374.217-.99.396-1.846.535L15 12l2.4.326c1 .145 1.698.337 2.11.576A3.011 3.011 0 0 1 20.6 17a2.968 2.968 0 0 1-4.07 1.098c-.348-.202-.771-.604-1.27-1.205L13.5 15l.724 1.36C14.74 17.559 15 18.439 15 19a3 3 0 0 1-6 0c0-.562.259-1.442.776-2.64L10.5 15l-1.76 1.893c-.499.601-.922 1-1.27 1.205A2.968 2.968 0 0 1 3.4 17a3.011 3.011 0 0 1 1.09-4.098c.374-.218.99-.396 1.846-.536L9 12l-2.4-.325c-1-.145-1.698-.337-2.11-.576A3.011 3.011 0 0 1 3.4 7a2.968 2.968 0 0 1 4.07-1.099c.348.203.771.604 1.27 1.205L10.5 9C9.5 6.708 9 5.375 9 5a3 3 0 0 1 3-3z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Sed ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem
+                                        accusantium doloremque</p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$8</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="drink-8.jpg" class="card-img-top" alt="drink-1">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Premium Wine Selection</h5>
+                                        <div class="svg">
+                                            <div class="circle3"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 26 26">
+                                                <path fill="currentColor"
+                                                    d="M25.326 10.137a1.001 1.001 0 0 0-.807-.68l-7.34-1.066l-3.283-6.651c-.337-.683-1.456-.683-1.793 0L8.82 8.391L1.48 9.457a1 1 0 0 0-.554 1.705l5.312 5.178l-1.254 7.31a1.001 1.001 0 0 0 1.451 1.054L13 21.252l6.564 3.451a1 1 0 0 0 1.451-1.054l-1.254-7.31l5.312-5.178a.998.998 0 0 0 .253-1.024z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Laudantium totam rem aperiam eaque ipsa quae ab illo
+                                        inventore
+                                        veritatis et quasi</p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$35</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card items">
+                                <img src="drink-10.jpg" class="card-img-top" alt="drink-2">
+                                <div class="card-body mt-2">
+                                    <div class="card-head d-flex justify-content-between">
+                                        <h5 class="card-title">Artisan Coffee</h5>
+                                        <div class="svg">
+                                            <div class="circle1"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                style="color: white;" viewBox="0 0 24 24">
+                                                <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2">
+                                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0" />
+                                                    <path
+                                                        d="M12 2a3 3 0 0 1 3 3c0 .562-.259 1.442-.776 2.64L13.5 9l1.76-1.893c.499-.6.922-1 1.27-1.205a2.968 2.968 0 0 1 4.07 1.099a3.011 3.011 0 0 1-1.09 4.098c-.374.217-.99.396-1.846.535L15 12l2.4.326c1 .145 1.698.337 2.11.576A3.011 3.011 0 0 1 20.6 17a2.968 2.968 0 0 1-4.07 1.098c-.348-.202-.771-.604-1.27-1.205L13.5 15l.724 1.36C14.74 17.559 15 18.439 15 19a3 3 0 0 1-6 0c0-.562.259-1.442.776-2.64L10.5 15l-1.76 1.893c-.499.601-.922 1-1.27 1.205A2.968 2.968 0 0 1 3.4 17a3.011 3.011 0 0 1 1.09-4.098c.374-.218.99-.396 1.846-.536L9 12l-2.4-.325c-1-.145-1.698-.337-2.11-.576A3.011 3.011 0 0 1 3.4 7a2.968 2.968 0 0 1 4.07-1.099c.348.203.771.604 1.27 1.205L10.5 9C9.5 6.708 9 5.375 9 5a3 3 0 0 1 3-3z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mt-3">Architecto beatae vitae dicta sunt explicabo nemo enim
+                                        ipsam
+                                        voluptatem quia voluptas</p>
+                                    <h5 class="fw-bold fs-4 d-flex justify-content-end mx-2 mt-4"
+                                        style="color: #eb5f2d;">$6</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs content -->
+            <div class="download-button d-flex justify-content-center align-items-center">
+                <a class="btn btn-success text-white mt-5 d-flex justify-content-center align-items-center "
+                    data-mdb-ripple-init
+                    style="font-weight: 500; background-color: #eb5f2d; width: 300px; height: 50px; border: none; border-radius: 30px;"
+                    href="#!" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="mx-2" viewBox="0 0 20 20">
+                        <path fill="currentColor"
+                            d="M19.31 12.051c.381 0 .69.314.69.7v4.918c-.006.67-.127 1.2-.399 1.594c-.328.476-.908.692-1.747.737l-15.903-.002c-.646-.046-1.168-.302-1.507-.777c-.302-.423-.446-.95-.444-1.558V12.75c0-.386.309-.7.69-.7c.38 0 .688.314.688.7v4.913c0 .333.065.572.182.736c.081.114.224.184.44.201l15.817.001c.42-.023.627-.1.655-.14c.084-.123.146-.393.15-.8V12.75c0-.386.308-.7.689-.7ZM9.99 0c.38 0 .69.313.69.7l-.001 10.869l3.062-3.079a.682.682 0 0 1 .975.004a.707.707 0 0 1-.004.99l-4.356 4.38a.682.682 0 0 1-.973-.003l-4.296-4.38a.707.707 0 0 1 .002-.99a.682.682 0 0 1 .975.002L9.3 11.794V.699C9.3.313 9.61 0 9.99 0Z" />
+                    </svg>
+                    Download Full Menu(PDF)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="container-fluid Testimonials">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                    <h2 class="mt-5 pt-5"
+                        style="font-family: 'Bitter', sans-serif; font-weight: 700; text-align: center;">
+                        Testimonials
+                    </h2>
+                    <hr width="100px" style="margin: 0 auto; border: none; height: 2px; background-color: #eb5f2d;">
+                    <hr width="200px" style="margin: 0 auto;">
+                    <p class="mt-3" style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem
+                        sint consectetur velit</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 1st -->
+                <section class="p-4 p-md-5 text-center text-lg-start  rounded">
+                    <div class="row d-flex justify-content-center">
+
+                        <!-- First Testimonial -->
+                        <div class="col-md-6 mb-4" style="border: none;">
+                            <div class="card h-100 Testimonial-card">
+                                <div class="card-body m-3">
+                                    <div class="row mb-4">
+                                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                                            <img src="person-f-5.png" class="img-fluid shadow-1 rounded-3"
+                                                alt="woman avatar" width="100" height="100" />
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <p class="lead mb-1"><strong>Sophia Martinez</strong></p>
+                                            <p class="text-muted mb-2">Creative Director</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                viewBox="0 0 56 56">
+                                                <path fill="currentColor"
+                                                    d="M42.466 3c1.188 0 2.13.383 2.826 1.15c.646.71.992 1.658 1.038 2.841l.006.277v41.464c0 1.297-.348 2.333-1.044 3.107c-.646.719-1.504 1.104-2.575 1.155l-.25.006H12.892c-1.204 0-2.154-.387-2.85-1.16c-.645-.72-.992-1.664-1.038-2.834L9 48.732V7.268c0-1.313.348-2.353 1.044-3.119c.646-.711 1.51-1.092 2.595-1.143L12.893 3zm-1.243 3.776H14.136c-.469 0-.813.11-1.032.328c-.191.192-.3.479-.323.862l-.005.17v39.728c0 .469.11.813.328 1.032c.192.191.479.3.862.323l.17.005h5.37v-6.918c0-.932.194-1.637.582-2.115l.11-.125c.423-.437 1.053-.674 1.89-.71l.233-.005h10.694c.97 0 1.68.238 2.134.715c.416.437.64 1.101.675 1.991l.005.249v6.918h5.394c.454 0 .79-.11 1.009-.328c.191-.192.299-.479.323-.862l.005-.17V8.136c0-.469-.11-.813-.328-1.032c-.22-.219-.555-.328-1.009-.328m-9.216 35.647h-8.678c-.458 0-.707.21-.745.63l-.005.12l-.001 6.051h10.179v-6.05c0-.46-.21-.707-.63-.746zm-7.552-13.18c.595 0 .914.276.957.83l.005.132v4.432c0 .595-.277.914-.83.957l-.132.004h-4.573c-.566 0-.87-.276-.91-.829l-.005-.132v-4.432c0-.596.263-.915.789-.957l.126-.005zm10.976 0c.595 0 .914.276.956.83l.005.132v4.432c0 .595-.276.914-.829.957l-.132.004h-4.55c-.58 0-.892-.276-.933-.829l-.005-.132v-4.432c0-.596.27-.915.809-.957l.129-.005zm-10.976-9.287c.595 0 .914.276.957.829l.005.132v4.433c0 .595-.277.914-.83.957l-.132.004h-4.573c-.566 0-.87-.276-.91-.829l-.005-.132v-4.433c0-.595.263-.914.789-.956l.126-.005zm10.976 0c.595 0 .914.276.956.829l.005.132v4.433c0 .595-.276.914-.829.957l-.132.004h-4.55c-.58 0-.892-.276-.933-.829l-.005-.132v-4.433c0-.595.27-.914.809-.956l.129-.005zm-10.976-9.287c.595 0 .914.276.957.829l.005.132v4.433c0 .595-.277.914-.83.957l-.132.004h-4.573c-.566 0-.87-.276-.91-.829l-.005-.132V11.63c0-.595.263-.914.789-.956l.126-.005zm10.976 0c.595 0 .914.276.956.829l.005.132v4.433c0 .595-.276.914-.829.957l-.132.004h-4.55c-.58 0-.892-.276-.933-.829l-.005-.132V11.63c0-.595.27-.914.809-.956l.129-.005z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="mt-3 mb-4"
+                                        viewBox="0 0 16 16">
+                                        <path fill="currentColor"
+                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234c-.2.032-.352-.176-.273-.362c.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272a1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666c.343 0 .662-.095.931-.26c-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01c1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01c1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4a1.686 1.686 0 0 0-.227-.273a1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667c0 .92.777 1.666 1.734 1.666c.343 0 .662-.095.931-.26z" />
+                                    </svg>
+                                    <p class="text-dark mb-0">
+                                        Leveraging cutting-edge design principles to create immersive brand experiences
+                                        that
+                                        resonate with modern audiences.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Testimonial -->
+                        <div class="col-md-6 mb-4 ">
+                            <div class="card h-100 Testimonial-card" style="background-color: #eb5f2d; color: white;">
+                                <div class="card-body m-3">
+                                    <div class="row mb-4">
+                                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                                            <img src="person-m-5.png" class="img-fluid shadow-1 rounded-3"
+                                                alt="man avatar" width="100" height="100" />
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <p class="lead mb-1"><strong>Alexander Wright</strong></p>
+                                            <p class=" mb-2">CEO & Founder</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                style="color: white;" viewBox="0 0 56 56">
+                                                <path fill="currentColor"
+                                                    d="M6.529 50.323c-1.091 0-1.952-.35-2.583-1.052c-.582-.648-.896-1.498-.94-2.55L3 46.454V8.87c0-1.19.315-2.133.946-2.827c.582-.641 1.36-.987 2.335-1.036L6.53 5h26.807c1.077 0 1.93.347 2.562 1.042c.582.64.895 1.493.94 2.557l.005.27v6.59h12.65c.993 0 1.798.3 2.411.897l.15.156c.582.647.896 1.497.94 2.549l.006.267v27.126c0 1.176-.315 2.115-.946 2.817c-.582.647-1.355.996-2.317 1.046l-.245.006zm30.314-3.869c0 .153-.005.302-.016.447h11.538c.411 0 .716-.1.915-.298c.17-.17.267-.424.291-.76l.007-.175V20.115c0-.425-.1-.737-.298-.936c-.17-.17-.419-.267-.745-.291l-.17-.006l-11.522-.001zM32.21 8.423H7.656c-.426 0-.737.099-.936.297c-.17.17-.267.424-.291.76l-.006.176v36.012c0 .425.099.736.297.935c.17.17.424.267.76.291l.176.007l4.867-.001v-6.27c0-.838.174-1.474.52-1.907l.108-.124c.38-.393.945-.607 1.694-.643l.23-.005h9.694c.878 0 1.523.216 1.934.648c.374.393.578.988.612 1.785l.005.245l-.001 6.271h4.89c.411 0 .716-.099.914-.297c.17-.17.268-.424.292-.76l.006-.175V9.656c0-.426-.1-.737-.298-.936c-.198-.198-.503-.297-.914-.297m-8.354 32.313h-7.866c-.412 0-.637.187-.675.562l-.005.118l-.001 5.484h9.226v-5.484c0-.412-.187-.637-.561-.675zm21.067-2.105c.441 0 .68.202.717.607l.005.116v3.316c0 .442-.202.681-.607.718l-.115.005h-3.423c-.429 0-.66-.203-.697-.607l-.004-.116v-3.316c0-.442.196-.681.59-.718l.111-.005zm0-8.12c.441 0 .68.202.717.607l.005.115v3.316c0 .442-.202.681-.607.718l-.115.005h-3.423c-.429 0-.66-.202-.697-.607l-.004-.116v-3.316c0-.442.196-.681.59-.718l.111-.005zm-27.913-1.723c.537 0 .826.248.867.743l.005.129v4.018c0 .536-.248.825-.743.866l-.129.005h-4.145c-.51 0-.785-.247-.824-.742l-.005-.13V29.66c0-.536.235-.825.706-.867l.123-.005zm9.95 0c.536 0 .824.248.866.743l.005.129v4.018c0 .536-.248.825-.743.866l-.129.005h-4.124c-.523 0-.805-.247-.845-.742l-.005-.13V29.66c0-.536.241-.825.724-.867l.126-.005zm17.963-6.399c.441 0 .68.203.717.608l.005.115v3.317c0 .441-.202.68-.607.717l-.115.005h-3.423c-.429 0-.66-.202-.697-.607l-.004-.115v-3.317c0-.441.196-.68.59-.718l.111-.005zm-27.913-2.02c.537 0 .826.248.867.744l.005.128v4.018c0 .537-.248.826-.743.867l-.129.005h-4.145c-.51 0-.785-.248-.824-.743l-.005-.129v-4.018c0-.536.235-.825.706-.866l.123-.005zm9.95 0c.536 0 .824.248.866.744l.005.128v4.018c0 .537-.248.826-.743.867l-.129.005h-4.124c-.523 0-.805-.248-.845-.743l-.005-.129v-4.018c0-.536.241-.825.724-.866l.126-.005zm-9.95-8.417c.537 0 .826.247.867.742l.005.13v4.017c0 .536-.248.825-.743.866l-.129.006h-4.145c-.51 0-.785-.248-.824-.743l-.005-.129v-4.018c0-.536.235-.825.706-.866l.123-.005zm9.95 0c.536 0 .824.247.866.742l.005.13v4.017c0 .536-.248.825-.743.866l-.129.006h-4.124c-.523 0-.805-.248-.845-.743l-.005-.129v-4.018c0-.536.241-.825.724-.866l.126-.005z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="mt-3 mb-4"
+                                        style="color: white;" viewBox="0 0 16 16">
+                                        <path fill="currentColor"
+                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234c-.2.032-.352-.176-.273-.362c.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272a1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666c.343 0 .662-.095.931-.26c-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01c1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01c1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4a1.686 1.686 0 0 0-.227-.273a1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667c0 .92.777 1.666 1.734 1.666c.343 0 .662-.095.931-.26z" />
+                                    </svg>
+                                    <p class="mb-0">
+                                        Driving impactful campaigns by blending creativity with data-driven strategies
+                                        for
+                                        measurable results.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Testimonial -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 Testimonial-card">
+                                <div class="card-body m-3">
+                                    <div class="row mb-4">
+                                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                                            <img src="person-f-6.png" class="img-fluid shadow-1 rounded-3"
+                                                alt="woman avatar" width="100" height="100" />
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <p class="lead mb-1"><strong>Isabella Kim</strong></p>
+                                            <p class="text-muted mb-2">Product Strategist</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                viewBox="0 0 16 16">
+                                                <g fill="currentColor">
+                                                    <path
+                                                        d="M12.5 16a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7Zm1.679-4.493l-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548l1.17-1.951a.5.5 0 1 1 .858.514Z" />
+                                                    <path
+                                                        d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1V1Z" />
+                                                    <path
+                                                        d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="mt-3 mb-4"
+                                        viewBox="0 0 16 16">
+                                        <path fill="currentColor"
+                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234c-.2.032-.352-.176-.273-.362c.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272a1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666c.343 0 .662-.095.931-.26c-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01c1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01c1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4a1.686 1.686 0 0 0-.227-.273a1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667c0 .92.777 1.666 1.734 1.666c.343 0 .662-.095.931-.26z" />
+                                    </svg>
+                                    <p class="text-dark mb-0">
+                                        Strategic implementation of innovative technologies has elevated our product
+                                        development and market penetration.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Testimonial -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 Testimonial-card">
+                                <div class="card-body m-3">
+                                    <div class="row mb-4">
+                                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                                            <img src="person-m-6.png" class="img-fluid shadow-1 rounded-3"
+                                                alt="man avatar" width="100" height="100" />
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <p class="lead mb-1"><strong>James Cooper</strong></p>
+                                            <p class="text-muted mb-2">Tech Lead</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h9M9 8h1m-1 4h1m-1 4h1m4-8h1m-1 4h1M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7m-3 6a2 2 0 1 0 4.001-.001A2 2 0 0 0 16 18m2-3.5V16m0 4v1.5m3.032-5.25l-1.299.75m-3.463 2l-1.3.75m0-3.5l1.3.75m3.463 2l1.3.75" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="mt-3 mb-4"
+                                        viewBox="0 0 16 16">
+                                        <path fill="currentColor"
+                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234c-.2.032-.352-.176-.273-.362c.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272a1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666c.343 0 .662-.095.931-.26c-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01c1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01c1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4a1.686 1.686 0 0 0-.227-.273a1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667c0 .92.777 1.666 1.734 1.666c.343 0 .662-.095.931-.26z" />
+                                    </svg>
+                                    <p class="text-dark mb-0">
+                                        Exceptional technical expertise and innovative solutions have streamlined our
+                                        development processes significantly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                    <h2 class="mt-5 pt-5"
+                        style="font-family: 'Bitter', sans-serif; font-weight: 700; text-align: center;">
+                        Chefs
+                    </h2>
+                    <hr width="100px" style="margin: 0 auto; border: none; height: 2px; background-color: #eb5f2d;">
+                    <hr width="200px" style="margin: 0 auto;">
+                    <p class="mt-3" style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem
+                        sint consectetur velit</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-exec-chef" aria-label="Executive Chef"
+                        style="background-color: #eb5f2d; border: none; width: 200px; height: 50px; border-radius: 30px; color: white; text-transform: uppercase; font-weight: 700;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"
+                            aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="m328.375 384l3.698 74.999l-75.862-52.719l-76.287 52.769L183.625 384h-32.039l-5.522 112h36.692l73.413-50.78L329.242 496h36.694l-5.522-112h-32.039zm87.034-229.086l-2.194-48.054L372.7 80.933l-25.932-40.519l-48.055-2.2L256 16.093l-42.713 22.126l-48.055 2.2L139.3 80.933L98.785 106.86l-2.194 48.054l-22.127 42.714l22.127 42.715l2.2 48.053l40.509 25.927l25.928 40.52l48.055 2.195L256 379.164l42.713-22.126l48.055-2.195l25.928-40.52l40.518-25.923l2.195-48.053l22.127-42.715Zm-31.646 76.949L382 270.377l-32.475 20.78l-20.78 32.475l-38.515 1.76L256 343.125l-34.234-17.733l-38.515-1.76l-20.78-32.475L130 270.377l-1.759-38.514l-17.741-34.235l17.737-34.228L130 124.88l32.471-20.78l20.78-32.474l38.515-1.76L256 52.132l34.234 17.733l38.515 1.76l20.78 32.474L382 124.88l1.759 38.515l17.741 34.233Z" />
+                        </svg>
+                        <span>Executive Chef</span>
+                    </button>
+
+                    <p style="font-family: 'Bitter',sans-serif; font-size: 48px; font-weight: bolder;" class="mt-4">
+                        Eliot Johnson </p>
+                    <div class="experience d-flex align-items-end">
+                        <p style="font-family: 'Bitter',sans-serif; font-size: 56px; font-weight: 900; color: #eb5f2d;">
+                            15+</p>
+                        <p class="mx-3" style="font-weight: 500; letter-spacing: 5px;">YEARS OF EXPERIENCE</p>
+                    </div>
+                    <p style="font-size: 17px; line-height: 2;" class="text-muted">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Mauris
+                        viverra veniam sit amet lacus cursus, vel blandit libero tempus. Nulla facilisi morbi tempus
+                        iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                    </p>
+                    <section>
+                        <div class="container mt-5 h-100">
+                            <div class="row d-flex align-items-center h-100">
+                                <div class="col col-lg-12 mb-4 mb-lg-0">
+                                    <figure class="p-3" style="border-left: .25rem solid #eb5f2d; border-radius: 15px;">
+                                        <blockquote class="blockquote d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M7 21v-2h4v-3.1q-1.225-.275-2.188-1.038T7.4 12.95q-1.875-.225-3.138-1.637T3 8V7q0-.825.588-1.413T5 5h2V3h10v2h2q.825 0 1.413.588T21 7v1q0 1.9-1.263 3.313T16.6 12.95q-.45 1.15-1.413 1.913T13 15.9V19h4v2H7Zm0-10.2V7H5v1q0 .95.55 1.713T7 10.8Zm10 0q.9-.325 1.45-1.088T19 8V7h-2v3.8Z" />
+                                            </svg>
+                                            <p class="mx-2" style="font-size: 16px; font-weight: 500;"><i>
+                                                    Culinary Excellence Award 2023
+                                                </i></p>
+                                        </blockquote>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="container mt-5 h-100">
+                            <div class="row d-flex align-items-center h-100">
+                                <div class="col col-lg-12 mb-4 mb-lg-0">
+                                    <figure class="p-3" style="border-left: .25rem solid #eb5f2d; border-radius: 15px;">
+                                        <blockquote class="blockquote d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                style="color: #eb5f2d;" viewBox="0 0 26 26">
+                                                <path fill="currentColor"
+                                                    d="M25.326 10.137a1.001 1.001 0 0 0-.807-.68l-7.34-1.066l-3.283-6.651c-.337-.683-1.456-.683-1.793 0L8.82 8.391L1.48 9.457a1 1 0 0 0-.554 1.705l5.312 5.178l-1.254 7.31a1.001 1.001 0 0 0 1.451 1.054L13 21.252l6.564 3.451a1 1 0 0 0 1.451-1.054l-1.254-7.31l5.312-5.178a.998.998 0 0 0 .253-1.024z" />
+                                            </svg>
+                                            <p class="mx-3" style="font-size: 16px; font-weight: 500;"><i>
+                                                    Michelin Featured Restaurant
+                                                </i></p>
+                                        </blockquote>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-6 mt-5 pt-5"
+                    style="background: url(chef-8.png); background-position: center; background-size: cover; border-radius: 20px; position: relative;">
+                    <img src="signature-1.jpg" alt="Executive Chef" width="200px" height="50px"
+                        style="border-radius: 10px; background-color: white; position: absolute; bottom: 50px; right: 30px;">
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5">
+                <div class="col-3">
+                    <div class="card text-center "
+                        style="background-color:#ffffff; border-radius: 15px; border: none;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="chef-5.png" class="img-fluid" style="border-radius: 15px 15px 0 0;">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 800;font-family: 'Bitter',sans-serif;">Elena
+                                Vasquez</h4>
+                            <h6 class="card-subtitle mb-2 mt-3" style="color: #eb5f2d; text-transform: uppercase;">Head
+                                Pastry Chef</h6>
+                            <p class="card-text text-muted mt-4" style="font-size: 15px;">
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card text-center "
+                        style="background-color:#ffffff; border-radius: 15px; border: none; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="chef-9.png" class="img-fluid" style="border-radius: 15px 15px 0 0;" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 800;font-family: 'Bitter',sans-serif;">David
+                                Thompson</h4>
+                            <h6 class="card-subtitle mb-2 mt-3" style="color: #eb5f2d; text-transform: uppercase;">Sous
+                                Chef</h6>
+                            <p class="card-text text-muted mt-4" style="font-size: 15px;">
+                                Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card text-center "
+                        style="background-color:#ffffff; border-radius: 15px; border: none; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="chef-2.png" class="img-fluid" style="border-radius: 15px 15px 0 0;" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 800;font-family: 'Bitter',sans-serif;">Maria
+                                Santos</h4>
+                            <h6 class="card-subtitle mb-2 mt-3" style="color: #eb5f2d; text-transform: uppercase;">
+                                Kitchen Manager</h6>
+                            <p class="card-text text-muted mt-4" style="font-size: 15px;">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card text-center "
+                        style="background-color:#ffffff; border-radius: 15px; border: none; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="chef-4.png" class="img-fluid" style="border-radius: 15px 15px 0 0;" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 800;font-family: 'Bitter',sans-serif;">Roberto
+                                Kim</h4>
+                            <h6 class="card-subtitle mb-2 mt-3" style="color: #eb5f2d; text-transform: uppercase;">Wine
+                                Sommelier</h6>
+                            <p class="card-text text-muted mt-4" style="font-size: 15px;">
+                                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
+                                mollit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Form and Information -->
+        <div class="container mt-5">
+            <div class="row d-flex">
+                <div class="col-6 mt-3 pt-5 px-5" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <p style="color: #eb5f2d; text-transform: uppercase; font-weight: 500;">Make a Reservation</p>
+                    <h1 class="fw-bolder" style="font-family: 'Bitter',sans-serif;">Reserve Your Table Today</h1>
+                    <p class="text-muted mb-5" style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Cras eget eros vitae magna eleifend lacinia a eget nisl.</p>
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example1"
+                                    style="font-size: 13.6px; font-weight: 600;">Full Name</label>
+                                <input type="text" id="form6Example1" class="form-control" placeholder="Your Name" />
+                            </div>
+
+                            <!-- Number input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example6"
+                                    style="font-size: 13.6px; font-weight: 600;">Phone Number</label>
+                                <input type="text" id="form6Example6" class="form-control" placeholder="Your Phone" />
+
+                            </div>
+
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example5"
+                                    style="font-size: 13.6px; font-weight: 600;">Email Address</label>
+                                <input type="email" id="form6Example5" class="form-control" placeholder="Your Email" />
+
+                            </div>
+
+                            <!-- Number of people input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label for="disabledSelect" class="form-label"
+                                    style="font-size: 13.6px; font-weight: 600;">Number of People</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Select guests</option>
+                                    <option>1 people</option>
+                                    <option>2 people</option>
+                                    <option>3 people</option>
+                                    <option>4 people</option>
+                                    <option>5 people</option>
+                                    <option>6+ people</option>
+                                </select>
+
+                            </div>
+
+                            <!-- Text input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example4"
+                                    style="font-size: 13.6px; font-weight: 600;">Reservation Date</label>
+                                <input type="date" id="form6Example4" class="form-control" placeholder="mm/dd/yyyy" />
+
+                            </div>
+
+                            <!-- Time Input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example4"
+                                    style="font-size: 13.6px; font-weight: 600;">Reservation Time</label>
+                                <input type="time" id="form6Example4" class="form-control" placeholder="--:-- --" />
+
+                            </div>
+
+                            <!-- Message input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example7"
+                                    style="font-size: 13.6px; font-weight: 600;">Special Requests</label>
+                                <textarea class="form-control" id="form6Example7" rows="4"
+                                    placeholder="Allergies, special ocassions, seating preferences"></textarea>
+
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="d-flex justify-content-center">
+                                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4"
+                                    style="background-color: #eb5f2d; border: none; height: 50px; width: 200px;">Confirm
+                                    Reservation</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 mt-3 p-0">
+                    <img src="showcase-4.png" height="400px" width="568px" alt="showcase-4" />
+                    <div>
+                        <h3 style="font-family: 'Bitter',sans-serif; font-weight: 700;" class="pt-5 px-5">Restaurant
+                            Information</h3>
+                        <!-- Details -->
+                        <div class="mt-4 mx-5 ">
+                            <!-- Timing -->
+                            <div class="col-12 d-flex mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.5.877a6.623 6.623 0 1 0 0 13.246A6.623 6.623 0 0 0 7.5.877ZM1.827 7.5a5.673 5.673 0 1 1 11.346 0a5.673 5.673 0 0 1-11.346 0ZM8 4.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .146.354l2 2a.5.5 0 0 0 .708-.708L8 7.293V4.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1" style="line-height: 0;">
+                                    <h5 style="font-family: 'Bitter',sans-serif; font-weight: 600; font-size: 19px;">
+                                        Opening Hours</h5>
+                                    <p class="mt-3 text-muted" style="font-size: 16px;">Mon - Fri: 11:00 AM - 11:00 PM
+                                    </p>
+                                    <p class="mt-4 text-muted" style="font-size:16px;">Sat - Sun: 10:00 AM - 12:00 AM
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Location -->
+                            <div class="col-12 d-flex mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 21">
+                                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" transform="translate(4 2)">
+                                            <path
+                                                d="m6.5 16.54l.631-.711c.716-.82 1.36-1.598 1.933-2.338l.473-.624c1.975-2.661 2.963-4.773 2.963-6.334C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033c0 1.561.988 3.673 2.963 6.334l.473.624a54.84 54.84 0 0 0 2.564 3.05z" />
+                                            <circle cx="6.5" cy="6.5" r="2.5" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1" style="line-height: 0;">
+                                    <h5 style="font-family: 'Bitter',sans-serif; font-weight: 600; font-size: 19px;">
+                                        Location</h5>
+                                    <p class="mt-3 text-muted" style="font-size: 16px;">5625 Riverside Avenue</p>
+                                    <p class="mt-4 text-muted" style="font-size:16px;">Newport, RI 02840</p>
+                                </div>
+                            </div>
+                            <!-- Contact  -->
+                            <div class="col-12 d-flex mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M19.44 13c-.22 0-.45-.07-.67-.12a9.44 9.44 0 0 1-1.31-.39a2 2 0 0 0-2.48 1l-.22.45a12.18 12.18 0 0 1-2.66-2a12.18 12.18 0 0 1-2-2.66l.42-.28a2 2 0 0 0 1-2.48a10.33 10.33 0 0 1-.39-1.31c-.05-.22-.09-.45-.12-.68a3 3 0 0 0-3-2.49h-3a3 3 0 0 0-3 3.41a19 19 0 0 0 16.52 16.46h.38a3 3 0 0 0 2-.76a3 3 0 0 0 1-2.25v-3a3 3 0 0 0-2.47-2.9Zm.5 6a1 1 0 0 1-.34.75a1.05 1.05 0 0 1-.82.25A17 17 0 0 1 4.07 5.22a1.09 1.09 0 0 1 .25-.82a1 1 0 0 1 .75-.34h3a1 1 0 0 1 1 .79q.06.41.15.81a11.12 11.12 0 0 0 .46 1.55l-1.4.65a1 1 0 0 0-.49 1.33a14.49 14.49 0 0 0 7 7a1 1 0 0 0 .76 0a1 1 0 0 0 .57-.52l.62-1.4a13.69 13.69 0 0 0 1.58.46q.4.09.81.15a1 1 0 0 1 .79 1Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1" style="line-height: 0;">
+                                    <h5 style="font-family: 'Bitter',sans-serif; font-weight: 600; font-size: 19px;">
+                                        Reservations</h5>
+                                    <p class="mt-3 text-muted" style="font-size: 16px;">+1 (401) 555-8792</p>
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="col-12 d-flex mb-5">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M29 9v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9m26 0a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2m26 0l-11.862 8.212a2 2 0 0 1-2.276 0L3 9" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1" style="line-height: 0;">
+                                    <h5 style="font-family: 'Bitter',sans-serif; font-weight: 600; font-size: 19px;">
+                                        Email Us</h5>
+                                    <p class="mt-3 text-muted" style="font-size: 16px;">reservations@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 style="font-family: 'Bitter', sans-serif;font-weight: 600;font-size: 18px;" class="mx-5">Prefer
+                        to call?</h5>
+                    <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4 mx-5 mt-2"
+                        style="background-color: #fef7f4;color: #eb5f2d; font-weight: 600; border: none; height: 50px; width: 210px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16">
+                            <path fill="currentColor"
+                                d="M4 1h1l1.5 5L5 7c0 2 2 4 4 4l1-1.5l5 1.5v1a3 3 0 0 1-3 3C5 15 1 10 1 4a3 3 0 0 1 3-3" />
+                        </svg>
+                        Call for Reservations</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visit Establishment -->
+
+        <div class="container mt-5 pt-5 mb-5">
+            <div class="row">
+                <div class="col-8">
+                    <h1 style="font-family: 'Bitter', sans-serif; font-size: 40px; font-weight: 700;">Visit Our
+                        Establishment</h1>
+                    <p class="text-muted" style="font-size: 18px;"><i>Located in the heart of Manhattan's culinary
+                            district</i></p>
+                    <hr class="mb-5 mt-4" style="border: none; height: 2px; background-color: #eb5f2d;">
+                    <iframe style="border-radius: 20px;"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56146.70623127613!2d70.26280262150281!3d28.41415279373029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1756145997438!5m2!1sen!2s"
+                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="d-flex">
+                        <!-- Subway -->
+                        <div class="col-6 d-flex mt-5 mx-3"
+                            style="border: 1px solid #f4f3f3; border-radius: 10px; width: 350px; height: 100px;">
+                            <div class="col-2 d-flex justify-content-center align-items-center" style="color: #eb5f2d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 48 48">
+                                    <g fill="none" stroke="currentColor">
+                                        <path stroke-linejoin="round" stroke-width="4"
+                                            d="M9 8.84c0-.933.438-1.807 1.271-2.225C12.246 5.625 16.613 4 24 4c7.388 0 11.754 1.625 13.728 2.615C38.563 7.033 39 7.907 39 8.839V36a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V8.84Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M34 38v4m-20-4v4" />
+                                        <path fill="currentColor"
+                                            d="M20.5 32a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Zm10 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M20 44h8" />
+                                        <path stroke-linejoin="round" stroke-width="4" d="M9 12h30v14H9z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M24 12v14m-4-14h8m-8 14h8" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="col-10 mx-1 pt-4" style="line-height: 1.5;">
+                                <h6>Subway</h6>
+                                <p class="text-muted">Union Square Station (4, 5, 6, L, N, Q, R, W)</p>
+                            </div>
+                        </div>
+                        <!-- Parking -->
+                        <div class="col-6 d-flex mt-5"
+                            style="border: 1px solid #f4f3f3; border-radius: 10px; width: 350px; height: 100px;">
+                            <div class="col-2 d-flex justify-content-center align-items-center" style="color: #eb5f2d;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                        <path d="M9 16V8h4a2 2 0 0 1 0 4H9" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="col-10 mx-1 pt-4" style="line-height: 1.5;">
+                                <h6>Valet Parking</h6>
+                                <p class="text-muted">Available daily from 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <!-- Address Card-->
+                    <div class="card text-center mb-4"
+                        style="width: 365px; height: 210px; border: 1px solid #f4f3f3; border-radius: 10px;">
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                style="color: #eb5f2d;">
+                                <div class="circle4"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 56 56">
+                                    <path fill="currentColor"
+                                        d="M42.466 3c1.188 0 2.13.383 2.826 1.15c.646.71.992 1.658 1.038 2.841l.006.277v41.464c0 1.297-.348 2.333-1.044 3.107c-.646.719-1.504 1.104-2.575 1.155l-.25.006H12.892c-1.204 0-2.154-.387-2.85-1.16c-.645-.72-.992-1.664-1.038-2.834L9 48.732V7.268c0-1.313.348-2.353 1.044-3.119c.646-.711 1.51-1.092 2.595-1.143L12.893 3zm-1.243 3.776H14.136c-.469 0-.813.11-1.032.328c-.191.192-.3.479-.323.862l-.005.17v39.728c0 .469.11.813.328 1.032c.192.191.479.3.862.323l.17.005h5.37v-6.918c0-.932.194-1.637.582-2.115l.11-.125c.423-.437 1.053-.674 1.89-.71l.233-.005h10.694c.97 0 1.68.238 2.134.715c.416.437.64 1.101.675 1.991l.005.249v6.918h5.394c.454 0 .79-.11 1.009-.328c.191-.192.299-.479.323-.862l.005-.17V8.136c0-.469-.11-.813-.328-1.032c-.22-.219-.555-.328-1.009-.328m-9.216 35.647h-8.678c-.458 0-.707.21-.745.63l-.005.12l-.001 6.051h10.179v-6.05c0-.46-.21-.707-.63-.746zm-7.552-13.18c.595 0 .914.276.957.83l.005.132v4.432c0 .595-.277.914-.83.957l-.132.004h-4.573c-.566 0-.87-.276-.91-.829l-.005-.132v-4.432c0-.596.263-.915.789-.957l.126-.005zm10.976 0c.595 0 .914.276.956.83l.005.132v4.432c0 .595-.276.914-.829.957l-.132.004h-4.55c-.58 0-.892-.276-.933-.829l-.005-.132v-4.432c0-.596.27-.915.809-.957l.129-.005zm-10.976-9.287c.595 0 .914.276.957.829l.005.132v4.433c0 .595-.277.914-.83.957l-.132.004h-4.573c-.566 0-.87-.276-.91-.829l-.005-.132v-4.433c0-.595.263-.914.789-.956l.126-.005zm10.976 0c.595 0 .914.276.956.829l.005.132v4.433c0 .595-.276.914-.829.957l-.132.004h-4.55c-.58 0-.892-.276-.933-.829l-.005-.132v-4.433c0-.595.27-.914.809-.956l.129-.005zm-10.976-9.287c.595 0 .914.276.957.829l.005.132v4.433c0 .595-.277.914-.83.957l-.132.004h-4.573c-.566 0-.87-.276-.91-.829l-.005-.132V11.63c0-.595.263-.914.789-.956l.126-.005zm10.976 0c.595 0 .914.276.956.829l.005.132v4.433c0 .595-.276.914-.829.957l-.132.004h-4.55c-.58 0-.892-.276-.933-.829l-.005-.132V11.63c0-.595.27-.914.809-.956l.129-.005z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body mb-5">
+                            <h5 class="card-title">Address</h5>
+                            <p class="card-text mb-0">
+                                847 Broadway Avenue
+                            </p>
+                            <p class="card-text">
+                                New York, NY 10003
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Reservations Card -->
+                    <div class="card text-center mb-4"
+                        style="width: 365px; height: 210px; border: 1px solid #f4f3f3; border-radius: 10px;">
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                style="color: #eb5f2d;">
+                                <div class="circle4"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
+                                    <path fill="currentColor"
+                                        d="M4 1h1l1.5 5L5 7c0 2 2 4 4 4l1-1.5l5 1.5v1a3 3 0 0 1-3 3C5 15 1 10 1 4a3 3 0 0 1 3-3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body mb-5">
+                            <h5 class="card-title">Reservations</h5>
+                            <p class="card-text mb-0">
+                                +1 (555) 234-5678
+                            </p>
+                            <p class="card-text text-muted mt-2" style="font-size: 14px;">
+                                <i>Recommended 24-48 hours advance booking</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timing Card -->
+                    <div class="card"
+                        style="width: 365px; height: 380px; border: 1px solid #f4f3f3; border-radius: 10px;">
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                style="color: #eb5f2d;">
+                                <div class="circle4"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M7.5.877a6.623 6.623 0 1 0 0 13.246A6.623 6.623 0 0 0 7.5.877ZM1.827 7.5a5.673 5.673 0 1 1 11.346 0a5.673 5.673 0 0 1-11.346 0ZM8 4.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .146.354l2 2a.5.5 0 0 0 .708-.708L8 7.293V4.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body mb-5 px-4">
+                            <h5 class="card-title text-center"
+                                style="font-size: 22.4px; font-family: 'Bitter',sans-serif; font-weight: 600;">Operating
+                                Hours</h5>
+                            <p class="card-text mb-0 d-flex justify-content-between mt-4">
+                                <span style="font-weight: 500;">Tuesday - Thursday</span><span
+                                    style="color: #eb5f2d; font-weight: 500;">5:00 PM - 10:00 PM</span>
+                            </p>
+                            <hr style="border: 1px solid #f2f1f1;">
+                            <p class="card-text d-flex justify-content-between">
+                                <span style="font-weight: 500;">Friday - Saturday</span><span
+                                    style="color: #eb5f2d; font-weight: 500;">5:00 PM - 11:00 PM</span>
+                            </p>
+                            <hr style="border: 1px solid #f2f1f1;">
+                            <p class="card-text d-flex justify-content-between">
+                                <span style="font-weight: 500;">Sunday</span><span
+                                    style="color: #eb5f2d; font-weight: 500;">4:00 PM - 9:00 PM</span>
+                            </p>
+                            <hr style="border: 1px solid #f2f1f1;">
+                            <p class="card-text d-flex justify-content-between mb-3">
+                                <span style="font-weight: 500;">Monday</span><span class="text-muted"
+                                    style="font-weight: 500;"><i>Closed</i></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="mt-4">
+                        <button class="btn btn-outline-success text-light" type="submit"
+                            style="background-color: #eb5f2d; border: none; width: 360px; height: 60px; font-weight:500">Book
+                            a Table</button>
+                        <button type="button" class="btn btn-outline-primary mt-3"
+                            style="color: #eb5f2d; border: 2px solid #eb5f2d; width: 360px; height: 60px; font-weight:500">Get
+                            Directions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dinning and Events -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 style="font-size: 48px; font-weight: 800; font-family: 'Bitter' ,sans-serif;">Exceptional Events
+                        & Private Dining</h1>
+                    <p class="text-muted mt-4" style="font-size: 18px; line-height: 1.6;">Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                    <div>
+                        <div class="d-flex ">
+                            <h2 style="color: #eb5f2d; display: flex; flex-direction: column; font-weight: 700;"><span
+                                    class="mx-4">500+</span> <span class="text-muted"
+                                    style="font-weight: 400; font-size: 16px;">EVENTS HOSTED</span></h2>
+                            <h2 class="mx-4"
+                                style="color: #eb5f2d; display: flex; flex-direction: column; font-weight: 700;    ">
+                                <span class="mx-4">200</span> <span class="text-muted"
+                                    style="font-weight: 400; font-size: 16px;">MAX CAPACITY</span>
+                            </h2>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col-6"
+                    style="background: url(event-2.png); background-position: center; background-size: cover; border-radius: 15px; position: relative;">
+                    <div style="width:250px; height: 65px; border-radius: 10px; background-color: white; position: absolute; bottom: 10px; left: 25px;"
+                        class="d-flex align-items-center px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style="color: #eb5f2d;"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m10.498 18.001l-3.705-3.705l1.415-1.415l2.294 2.294l5.293-5.293l1.415 1.415l-6.712 6.704zM21 6v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V2h2v2h8V2h2v2h1a2 2 0 0 1 2 2zm-2 2H5v11h14V8z" />
+                        </svg>
+                        <p style="font-weight: 500;" class="mx-2 mt-3">Book Your Event Today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Plans -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Pricing Section -->
+                <section class="container my-5">
+                    <h1 class="text-center mb-3" style="font-family: 'Bitter', sans-serif; font-weight: 800;">Choose
+                        Your Perfect Package</h1>
+                    <p class="text-muted text-center mb-5" style="font-size: 17px;">Ut enim ad minima veniam, quis
+                        nostrum exercitationem ullam corporis suscipit laboriosam</p>
+                    <div class="row">
+                        <!-- Premium Plan -->
+                        <div class="col-md-4">
+                            <div class="pricing-card free">
+                                <div
+                                    style="position: relative; display: flex; justify-content: center; align-items: center;">
+                                    <div class="square1"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                        style="position: absolute; color: white;" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor"
+                                            d="M1018.72 295.472L878.848 28.03C870.688 12.43 849.584-.322 832-.322H510.064c-.351-.015-.703-.11-1.054-.127c-.288 0-.56.113-.849.128h-316.16c-17.6 0-38.752 12.72-47.024 28.256L5.473 290.223c-8.289 15.536-6.624 39.937 3.631 54.257l480.016 669.152c5.153 7.184 12 10.815 18.832 10.815c6.785 0 13.584-3.536 18.768-10.591L1014.624 349.6c10.384-14.193 12.256-38.544 4.096-54.128zm-76.353-7.843H770.911l68.656-196.608zM575.343 63.677h205.968l-63.888 182.928zm92.895 223.952H370.591L511.263 85.533zm-354.351-30.544L249.71 63.677h198.816zm366.863 94.544L508.718 844.173L345.262 351.629H680.75zM436.926 831.085L92.99 351.629h184.832zm311.616-479.456H933.71l-352.976 480.56zM188.478 82.413l68.096 205.216H79.326z" />
+                                    </svg>
+                                </div>
+                                <h3 style="font-family: 'Bitter',sans-serif; font-weight: 800;">Premium Package</h3>
+                                <div class="price"><span style="color: #eb5f2d; font-weight: 800;">$129</span> <span
+                                        class="text-muted" style="font-size: 16px;">per person</span></div>
+                                <ul class="features text- mt-4">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> 5-course gourmet menu</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Premium wine selection</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Dedicated event coordinator</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Custom table arrangements</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Professional photography</li>
+                                </ul>
+                                <a href="#"
+                                    class="btn btn-success d-flex align-items-center justify-content-center mt-5"
+                                    style="background-color: #fdede7; color: #eb5f2d; border: none; width: 300px; height: 50px; border-radius: 30px; font-weight: 600; ">30-80
+                                    guests</a>
+                            </div>
+                        </div>
+                        <!-- Standard Plan -->
+                        <div class="col-md-4">
+                            <div class="pricing-card gold">
+                                <div class="d-flex justify-content-center align-items-center"
+                                    style="position: absolute; top: -20px; left: 110px; width: 130px; height: 40px; background-color: #eb5f2d; border-radius: 30px; color: white;">
+                                    Most Popular</div>
+                                <div
+                                    style="position: relative; display: flex; justify-content: center; align-items: center;">
+                                    <div class="square1"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                        style="position: absolute; color: white;" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M21.995 9.933a.5.5 0 0 0-.423-.568l-6.304-.919l-2.82-5.73a.52.52 0 0 0-.896 0l-2.82 5.73l-6.304.92a.5.5 0 0 0-.278.852l4.563 4.46l-1.077 6.3a.5.5 0 0 0 .726.527L12 18.532l5.638 2.973a.506.506 0 0 0 .316.05a.5.5 0 0 0 .41-.576l-1.077-6.3l4.563-4.461a.5.5 0 0 0 .145-.285zM16.4 14.147a.501.501 0 0 0-.143.442l.95 5.558l-4.974-2.623a.506.506 0 0 0-.466 0l-4.974 2.623l.95-5.558a.501.501 0 0 0-.143-.442L3.572 10.21l5.565-.81a.501.501 0 0 0 .376-.275L12 4.07l2.487 5.054a.5.5 0 0 0 .376.274l5.565.811l-4.028 3.938z" />
+                                    </svg>
+                                </div>
+                                <h3 style="font-family: 'Bitter',sans-serif; font-weight: 800;">Standard Package</h3>
+                                <div class="price"><span style="color: #eb5f2d; font-weight: 800;">$89</span> <span
+                                        class="text-muted" style="font-size: 16px;">per person</span></div>
+                                <ul class="features">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> 5-course gourmet menu</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Premium wine selection</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Dedicated event coordinator</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Custom table arrangements</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Professional photography</li>
+
+                                </ul>
+                                <a href="#"
+                                    class="btn btn-success d-flex align-items-center justify-content-center mt-5"
+                                    style="background-color: #fdede7; color: #eb5f2d; border: none; width: 300px; height: 50px; border-radius: 30px; font-weight: 600; ">20-120
+                                    guests</a>
+                            </div>
+                        </div>
+                        <!-- Essentials Plan -->
+                        <div class="col-md-4">
+                            <div class="pricing-card platinum">
+                                <div
+                                    style="position: relative; display: flex; justify-content: center; align-items: center;">
+                                    <div class="square1"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                        style="position: absolute; color: white;" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor"
+                                            d="M287.984 114.16c31.376 0 88.094 15.008 180.094 105.616l45.616 44.912l44.928-45.632c63.872-64.896 131.84-105.2 177.376-105.2c61.408 0 109.809 21.008 157.009 68.096c44.464 44.368 68.992 103.36 68.992 166.112c.032 62.784-24.448 121.824-69.408 166.672c-3.664 3.712-196.992 212.304-358.96 387.104c-7.632 7.248-16.352 8.32-20.991 8.32c-4.576 0-13.2-1.024-20.8-8.096c-39.472-43.905-325.552-362-358.815-395.232C88.497 462.416 64 403.376 64 340.608c.015-62.752 24.511-121.728 69.04-166.144c43.295-43.264 93.984-60.304 154.944-60.304zm-.002-64c-76.528 0-144 22.895-200.176 79.008c-117.072 116.768-117.072 306.128 0 422.96c33.424 33.44 357.855 394.337 357.855 394.337c18.48 18.496 42.753 27.68 66.96 27.68c24.225 0 48.4-9.184 66.912-27.68c0 0 354.88-383.024 358.656-386.85c117.04-116.88 117.04-306.24 0-423.007c-58.112-58-123.024-86.784-202.208-86.784c-75.648 0-160 60.32-223.008 124.32C447.981 110.159 366.237 50.16 287.981 50.16z" />
+                                    </svg>
+                                </div>
+                                <h3 style="font-family: 'Bitter',sans-serif; font-weight: 800;">Essentials Package</h3>
+                                <div class="price"><span style="color: #eb5f2d; font-weight: 800;">$59</span> <span
+                                        class="text-muted" style="font-size: 16px;">per person</span></div>
+                                <ul class="features">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> 5-course gourmet menu</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Premium wine selection</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Dedicated event coordinator</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Custom table arrangements</li>
+                                    <hr style="border: 1px solid #ebeaea;">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            style="color: #eb5f2d;" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm204.336-636.352L415.935 626.944l-135.28-135.28c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248l158.384 158.4c12.496 12.48 32.752 12.48 45.264 0c1.44-1.44 2.673-3.009 3.793-4.64l318.784-320.753c12.48-12.496 12.48-32.752 0-45.263c-12.512-12.496-32.768-12.496-45.28 0z" />
+                                        </svg> Professional photography</li>
+                                </ul>
+                                <a href="#"
+                                    class="btn btn-success d-flex align-items-center justify-content-center mt-5"
+                                    style="background-color: #fdede7; color: #eb5f2d; border: none; width: 300px; height: 50px; border-radius: 30px; font-weight: 600; ">15-60
+                                    guests</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Events Gallery -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <img src="event-4.png" class="img-fluid" alt="Event-4" style="border-radius: 10px;">
+                </div>
+                <div class="col-6">
+                    <img src="event-6.png" class="img-fluid" alt="Event-6" style="border-radius: 10px;">
+                </div>
+                <div class="col-3">
+                    <img src="event-9.png" class="img-fluid" alt="Event" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Plan for Event -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div>
+                        <h2 style="font-family: 'Bitter',sans-serif; font-weight: 900;" class="pt-5">Plan Your Next
+                            Event</h2>
+                        <p class="text-muted mt-4 mb-5" style="font-size: 17px; line-height: 1.8;">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                        <!-- Details -->
+                        <div class="mt-4 ">
+                            <!-- Contact  -->
+                            <div class="col-12 d-flex mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M19.44 13c-.22 0-.45-.07-.67-.12a9.44 9.44 0 0 1-1.31-.39a2 2 0 0 0-2.48 1l-.22.45a12.18 12.18 0 0 1-2.66-2a12.18 12.18 0 0 1-2-2.66l.42-.28a2 2 0 0 0 1-2.48a10.33 10.33 0 0 1-.39-1.31c-.05-.22-.09-.45-.12-.68a3 3 0 0 0-3-2.49h-3a3 3 0 0 0-3 3.41a19 19 0 0 0 16.52 16.46h.38a3 3 0 0 0 2-.76a3 3 0 0 0 1-2.25v-3a3 3 0 0 0-2.47-2.9Zm.5 6a1 1 0 0 1-.34.75a1.05 1.05 0 0 1-.82.25A17 17 0 0 1 4.07 5.22a1.09 1.09 0 0 1 .25-.82a1 1 0 0 1 .75-.34h3a1 1 0 0 1 1 .79q.06.41.15.81a11.12 11.12 0 0 0 .46 1.55l-1.4.65a1 1 0 0 0-.49 1.33a14.49 14.49 0 0 0 7 7a1 1 0 0 0 .76 0a1 1 0 0 0 .57-.52l.62-1.4a13.69 13.69 0 0 0 1.58.46q.4.09.81.15a1 1 0 0 1 .79 1Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1 pt-3" style="line-height: 0;">
+                                    <p class="text-muted" style="font-size: 16px;">
+                                        Call Us</p>
+                                    <h6 class="mt-3"
+                                        sstyle="font-family: 'Bitter',sans-serif; font-weight: bold; font-size: 19px;">
+                                        +1 (555) 123-4567</h6>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-12 d-flex mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M29 9v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9m26 0a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2m26 0l-11.862 8.212a2 2 0 0 1-2.276 0L3 9" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1 pt-3" style="line-height: 0;">
+                                    <p class="text-muted" style="font-size: 16px;">
+                                        Email</p>
+                                    <h6 class="mt-3"
+                                        sstyle="font-family: 'Bitter',sans-serif; font-weight: bold; font-size: 19px;">
+                                        events@example.com</h6>
+                                </div>
+                            </div>
+                            <!-- Timing -->
+                            <div class="col-12 d-flex mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <div class="square"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.5.877a6.623 6.623 0 1 0 0 13.246A6.623 6.623 0 0 0 7.5.877ZM1.827 7.5a5.673 5.673 0 1 1 11.346 0a5.673 5.673 0 0 1-11.346 0ZM8 4.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .146.354l2 2a.5.5 0 0 0 .708-.708L8 7.293V4.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1 pt-3" style="line-height: 0;">
+                                    <p class="text-muted" style="font-size: 16px;">
+                                        Planning Hours</p>
+                                    <h6 class="mt-3"
+                                        sstyle="font-family: 'Bitter',sans-serif; font-weight: bold; font-size: 19px;">
+                                        Mon-Fri 9AM-6PM</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5">
+                    <form class="p-4" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 20px;">
+                        <h4 class="mb-5 mt-3 text-center" style="font-family: 'Bitter',sans-serif; font-weight: 1000;">
+                            Quick Event Inquiry</h4>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form6Example1" class="form-control"
+                                        style="border-radius: 10px; border: 2px solid #e1dfdf; height: 50px;"
+                                        placeholder="Your Name" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="email" id="form6Example2" class="form-control"
+                                        style="border-radius: 10px; border: 2px solid #e1dfdf; height: 50px;"
+                                        placeholder="Your Email" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form6Example1" class="form-control"
+                                        style="border-radius: 10px; border: 2px solid #e1dfdf; height: 50px;"
+                                        placeholder="Phone Number" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="date" id="form6Example2" class="form-control"
+                                        style="border-radius: 10px; border: 2px solid #e1dfdf; height: 50px;"
+                                        placeholder="dd/mm/yyyy" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <select id="disabledSelect" class="form-select"
+                                        style="border-radius: 10px; border: 2px solid #e1dfdf; height: 50px;">
+                                        <option>Guest Count</option>
+                                        <option>15-30 guests</option>
+                                        <option>31-60 guests</option>
+                                        <option>61-100 guests</option>
+                                        <option>100+ guests</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <select id="disabledSelect" class="form-select"
+                                        style="border-radius: 10px; border: 2px solid #e1dfdf; height: 50px;">
+                                        <option>Event Type</option>
+                                        <option>Wedding</option>
+                                        <option>Corperater Event</option>
+                                        <option>Birthday Party</option>
+                                        <option>Other</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message input -->
+                        <div data-mdb-input-init class="form-outline mb-3">
+                            <textarea class="form-control" id="form6Example7" rows="4"
+                                placeholder="Tell us about your event..."
+                                style="border-radius: 10px; border: 2px solid #e1dfdf;"></textarea>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4"
+                            style="width: 100%; height: 60px; border-radius: 30px; background-color: #eb5f2d; border: none; font-weight: 500;">Send
+                            Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                    <h2 class="mt-5 pt-5"
+                        style="font-family: 'Bitter', sans-serif; font-weight: 700; text-align: center;">
+                        Gallery
+                    </h2>
+                    <hr width="100px" style="margin: 0 auto; border: none; height: 2px; background-color: #eb5f2d;">
+                    <hr width="200px" style="margin: 0 auto;">
+                    <p class="mt-3" style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem
+                        sint
+                        consectetur velit</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tabs navs (Gallery) -->
+                <ul class="nav nav-pills mb-3 justify-content-center menu-tabs" id="gallery-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a data-bs-toggle="tab" class="nav-link active" id="gallery-tab-1" href="#gallery-pane-1"
+                            role="tab" aria-controls="gallery-pane-1" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a data-bs-toggle="tab" class="nav-link" id="gallery-tab-2" href="#gallery-pane-2" role="tab"
+                            aria-controls="gallery-pane-2" aria-selected="false">Food</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a data-bs-toggle="tab" class="nav-link" id="gallery-tab-3" href="#gallery-pane-3" role="tab"
+                            aria-controls="gallery-pane-3" aria-selected="false">Interior</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a data-bs-toggle="tab" class="nav-link" id="gallery-tab-4" href="#gallery-pane-4" role="tab"
+                            aria-controls="gallery-pane-4" aria-selected="false">Events</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a data-bs-toggle="tab" class="nav-link" id="gallery-tab-5" href="#gallery-pane-5" role="tab"
+                            aria-controls="gallery-pane-5" aria-selected="false">Staff</a>
+                    </li>
+                </ul>
+
+                <!-- Tabs content (Gallery) -->
+                <div class="tab-content" id="gallery-tab-content">
+                    <!-- All -->
+                    <div class="tab-pane fade show active" id="gallery-pane-1" role="tabpanel"
+                        aria-labelledby="gallery-tab-1">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                <img src="starter-3.png" class="w-100 shadow rounded mb-4" alt="Starter">
+                                <img src="chef-6.png" class="w-100 shadow rounded mb-4" alt="Chef at work">
+                                <img src="chef-3.png" class="w-100 shadow rounded mb-4" alt="Chef plating">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="showcase-5.png" class="w-100 shadow rounded mb-4" alt="Interior showcase">
+                                <img src="event-4.png" class="w-100 shadow rounded mb-4" alt="Event">
+                                <img src="dessert-5.png" class="w-100 shadow rounded mb-4" alt="Dessert">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="main-7.png" class="w-100 shadow rounded mb-4" alt="Main course">
+                                <img src="showcase-2.png" class="w-100 shadow rounded mb-4" alt="Interior seating">
+                                <img src="event-8.png" class="w-100 shadow rounded mb-4" alt="Event 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Food -->
+                    <div class="tab-pane fade" id="gallery-pane-2" role="tabpanel" aria-labelledby="gallery-tab-2">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                <img src="starter-3.png" class="w-100 shadow rounded mb-4" alt="Starter">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="dessert-5.png" class="w-100 shadow rounded mb-4" alt="Dessert">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="main-7.png" class="w-100 shadow rounded mb-4" alt="Main">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interior -->
+                    <div class="tab-pane fade" id="gallery-pane-3" role="tabpanel" aria-labelledby="gallery-tab-3">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="showcase-5.png" class="w-100 shadow rounded mb-4" alt="Interior view 1">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="showcase-2.png" class="w-100 shadow rounded mb-4" alt="Interior view 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="tab-pane fade" id="gallery-pane-4" role="tabpanel" aria-labelledby="gallery-tab-4">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="event-4.png" class="w-100 shadow rounded mb-4" alt="Event photo 1">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="event-8.png" class="w-100 shadow rounded mb-4" alt="Event photo 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Staff (added) -->
+                    <div class="tab-pane fade" id="gallery-pane-5" role="tabpanel" aria-labelledby="gallery-tab-5">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="chef-6.png" class="w-100 shadow rounded mb-4" alt="Head chef">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="chef-3.png" class="w-100 shadow rounded mb-4" alt="Sous chef">
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="chef-2.png" class="w-100 shadow rounded mb-4" alt="Pastry chef">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Contact Section -->
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <h2 class="mt-5 pt-5"
+                            style="font-family: 'Bitter', sans-serif; font-weight: 700; text-align: center;">
+                            Contact
+                        </h2>
+                        <hr width="100px" style="margin: 0 auto; border: none; height: 2px; background-color: #eb5f2d;">
+                        <hr width="200px" style="margin: 0 auto;">
+                        <p class="mt-3" style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum
+                            quidem
+                            sint
+                            consectetur velit</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-4 p-4 mt-4"
+                        style="margin-right: 20px; border-top: 5px solid #eb5f2d; border-radius: 10px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                        <h5 style="font-family: 'Bitter', sans-serif; font-weight: 800;">Contact Information</h5>
+                        <hr style="border: 2px solid #eb5f2d; width: 60px;">
+                        <p style="font-size: 15px;">Feel free to reach out with any questions about the book, speaking
+                            engagements, or media inquiries.</p>
+
+                        <div class="mt-4 ">
+                            <!-- Email -->
+                            <div class="col-12 d-flex">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M29 9v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9m26 0a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2m26 0l-11.862 8.212a2 2 0 0 1-2.276 0L3 9" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1 " style="line-height: 0;">
+                                    <h6 class="mt-3"
+                                        style="font-family: 'Bitter',sans-serif; font-weight: bold; font-size: 16px;">
+                                        Email:</h6>
+                                    <p class="text-muted mt-3" style="font-size: 16px;">
+                                        author@example.com</p>
+
+                                </div>
+                            </div>
+                            <!-- Contact  -->
+                            <div class="col-12 d-flex">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M19.44 13c-.22 0-.45-.07-.67-.12a9.44 9.44 0 0 1-1.31-.39a2 2 0 0 0-2.48 1l-.22.45a12.18 12.18 0 0 1-2.66-2a12.18 12.18 0 0 1-2-2.66l.42-.28a2 2 0 0 0 1-2.48a10.33 10.33 0 0 1-.39-1.31c-.05-.22-.09-.45-.12-.68a3 3 0 0 0-3-2.49h-3a3 3 0 0 0-3 3.41a19 19 0 0 0 16.52 16.46h.38a3 3 0 0 0 2-.76a3 3 0 0 0 1-2.25v-3a3 3 0 0 0-2.47-2.9Zm.5 6a1 1 0 0 1-.34.75a1.05 1.05 0 0 1-.82.25A17 17 0 0 1 4.07 5.22a1.09 1.09 0 0 1 .25-.82a1 1 0 0 1 .75-.34h3a1 1 0 0 1 1 .79q.06.41.15.81a11.12 11.12 0 0 0 .46 1.55l-1.4.65a1 1 0 0 0-.49 1.33a14.49 14.49 0 0 0 7 7a1 1 0 0 0 .76 0a1 1 0 0 0 .57-.52l.62-1.4a13.69 13.69 0 0 0 1.58.46q.4.09.81.15a1 1 0 0 1 .79 1Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1 pt-3" style="line-height: 0;">
+                                    <h6 class="mt-3"
+                                        style="font-family: 'Bitter',sans-serif; font-weight: bold; font-size: 16px;">
+                                        Phone:</h6>
+                                    <p class="text-muted mt-3" style="font-size: 16px;">
+                                        +1 (555) 123-4567</p>
+                                </div>
+                            </div>
+
+
+                            <!-- Timing -->
+                            <div class="col-12 d-flex">
+                                <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                    style="color: #eb5f2d;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.5.877a6.623 6.623 0 1 0 0 13.246A6.623 6.623 0 0 0 7.5.877ZM1.827 7.5a5.673 5.673 0 1 1 11.346 0a5.673 5.673 0 0 1-11.346 0ZM8 4.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .146.354l2 2a.5.5 0 0 0 .708-.708L8 7.293V4.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 mx-1 pt-3" style="line-height: 1.5;">
+                                    <h6 class="mt-3"
+                                        style="font-family: 'Bitter',sans-serif; font-weight: bold; font-size: 19px;">
+                                        Address</h6>
+                                    <p class="text-muted" style="font-size: 16px;">
+                                        123 Book Street, Literary Lane
+                                        Wordsmith City, NY 10001</p>
+
+                                </div>
+                            </div>
+
+                            <a data-mdb-ripple-init class="btn btn-primary btn-md btn-floating mx-1 mt-2"
+                                style="background-color: #fdefea; color: #eb5f2d; border: none; border-radius: 50%;"
+                                href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                            <a data-mdb-ripple-init class="btn btn-primary btn-md mx-1 btn-floating mt-2"
+                                style="background-color: #fdefea; color: #eb5f2d; border: none; border-radius: 50%;"
+                                href="#!" role="button"><i class="fab fa-facebook"></i></a>
+
+                            <a data-mdb-ripple-init class="btn btn-primary btn-md mx-1 btn-floating mt-2"
+                                style="background-color: #fdefea; color: #eb5f2d; border: none; border-radius: 50%;"
+                                href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                            <a data-mdb-ripple-init class="btn btn-primary btn-md mx-1 btn-floating mt-2"
+                                style="background-color: #fdefea; color: #eb5f2d; border: none; border-radius: 50%;"
+                                href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-7 p-4 mt-4 mx-"
+                        style="border-top: 5px solid #eb5f2d; border-radius: 10px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                        <form>
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="form6Example1">Your Name</label>
+                                        <input type="text" id="form6Example1" class="form-control"
+                                            placeholder="John Doe" style="height: 50px; border-radius: 10px;" />
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="form6Example2">Your Email</label>
+                                        <input type="email" id="form6Example2" class="form-control"
+                                            placeholder="john@example.com" style="height: 50px; border-radius: 10px;" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example3">Subject</label>
+                                <input type="text" id="form6Example3" class="form-control"
+                                    placeholder="I loved your book!" style="height: 50px; border-radius: 10px;" />
+                            </div>
+
+                            <!-- Message input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example7">Message</label>
+                                <textarea class="form-control" id="form6Example7" rows="4"
+                                    placeholder="Your message here..." style="border-radius: 10px;"></textarea>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="d-flex justify-content-center">
+                                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4 "
+                                    style="background-color: #eb5f2d; border: none; border-radius: 30px; width: 160px; height: 50px; font-weight: 600;">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-dark mt-5" style="background-color: #fff9f7; border-top: 1 px solid black;">
+            <div class="container">
+                <div class="row">
+                    <footer class="text-center text-lg-start">
+                        <!-- Grid container -->
+                        <div class="container p-4">
+                            <!--Grid row-->
+                            <div class="row mt-4">
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                                    <h5 class="mb-4"
+                                        style="font-family: 'Bitter',sans-serif; font-weight: 900; font-size: 25px;">
+                                        Savora</h5>
+
+                                    <p>
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                        cubilia curae. Donec velit neque auctor sit amet aliquam vel ullamcorper sit
+                                        amet ligula.
+                                    </p>
+
+                                    <p style="font-family: 'Bitter',sans-serif; font-weight: 600; font-size: 16px;"
+                                        class="mt-4 pb-1">Stay Updated</p>
+
+                                    <div class="form-outline form-white mb-4 d-flex position-relative">
+                                        <input type="text" id="formControlLg" class="form-control form-control-lg"
+                                            placeholder="Enter your email"
+                                            style="border-radius: 30px; font-size: 14px; height: 50px; border: none; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" />
+                                        <button type="button" class="d-flex justify-content-center align-items-center btn btn-primary btn-floating position-absolute
+                                                data-mdb-ripple-init"
+                                            style="right: 0px; height: 50px; border-radius: 0 30px 30px 0; width: 60px; background-color: #eb5f2d; border: none;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1L21 3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-decoration: none;">
+                                    <!-- Links -->
+                                    <h6 class="fw-bold"
+                                        style="font-family: 'Bitter',sans-serif; font-size: 18px; font-weight: 600;">
+                                        Company</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 30px; background-color: #ed6f42; height: 2px" />
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">About</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Careers</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Press</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Blog</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Contact</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class=" fw-bold"
+                                        style="font-family: 'Bitter',sans-serif; font-size: 18px; font-weight: 600;">
+                                        Solutions</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 30px; background-color: #ed6f42; height: 2px" />
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Digital
+                                            Strategy</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Cloud
+                                            Computing</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Data Analytics</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">AI Solutions</a>
+                                    </p>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            style="color: #eb5f2d;" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" />
+                                        </svg>
+                                        <a href="#!" style="text-decoration: none; color: #a27d77;">Cybersecurity</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                    <!-- Links -->
+                                    <h6 class=" fw-bold"
+                                        style="font-family: 'Bitter',sans-serif; font-size: 18px; font-weight: 600;">Get
+                                        in Touch</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 30px; background-color: #ed6f42; height: 2px; " />
+                                    <div class="d-flex justify-content-center align-items-start">
+                                        <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                            style="color: #eb5f2d;">
+                                            <div class="circle5"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 21 21">
+                                                <g fill="none" fill-rule="evenodd" stroke="currentColor"
+                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                    transform="translate(4 2)">
+                                                    <path
+                                                        d="m6.5 16.54l.631-.711c.716-.82 1.36-1.598 1.933-2.338l.473-.624c1.975-2.661 2.963-4.773 2.963-6.334C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033c0 1.561.988 3.673 2.963 6.334l.473.624a54.84 54.84 0 0 0 2.564 3.05z" />
+                                                    <circle cx="6.5" cy="6.5" r="2.5" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p style="color: #a27d77; font-size: 14px;" class="mx-2"> 2847 Maple Avenue
+                                            Los Angeles, CA 90210
+                                            United States</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                            style="color: #eb5f2d;">
+                                            <div class="circle5"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M19.44 13c-.22 0-.45-.07-.67-.12a9.44 9.44 0 0 1-1.31-.39a2 2 0 0 0-2.48 1l-.22.45a12.18 12.18 0 0 1-2.66-2a12.18 12.18 0 0 1-2-2.66l.42-.28a2 2 0 0 0 1-2.48a10.33 10.33 0 0 1-.39-1.31c-.05-.22-.09-.45-.12-.68a3 3 0 0 0-3-2.49h-3a3 3 0 0 0-3 3.41a19 19 0 0 0 16.52 16.46h.38a3 3 0 0 0 2-.76a3 3 0 0 0 1-2.25v-3a3 3 0 0 0-2.47-2.9Zm.5 6a1 1 0 0 1-.34.75a1.05 1.05 0 0 1-.82.25A17 17 0 0 1 4.07 5.22a1.09 1.09 0 0 1 .25-.82a1 1 0 0 1 .75-.34h3a1 1 0 0 1 1 .79q.06.41.15.81a11.12 11.12 0 0 0 .46 1.55l-1.4.65a1 1 0 0 0-.49 1.33a14.49 14.49 0 0 0 7 7a1 1 0 0 0 .76 0a1 1 0 0 0 .57-.52l.62-1.4a13.69 13.69 0 0 0 1.58.46q.4.09.81.15a1 1 0 0 1 .79 1Z" />
+                                            </svg>
+                                        </div>
+                                        <p style="color: #a27d77; font-size: 14px;" class="mx-2"> +1 (555) 987-6543</p>
+                                    </div>
+                                    <div class="d-flex align-items-start mt-3">
+                                        <div class="col-2 d-flex justify-content-center align-items-center Details"
+                                            style="color: #eb5f2d;">
+                                            <div class="circle5"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 32 32">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M29 9v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9m26 0a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2m26 0l-11.862 8.212a2 2 0 0 1-2.276 0L3 9" />
+                                            </svg>
+                                        </div>
+                                        <p style="color: #a27d77;" class="mx-2"> contact@example.com
+                                        </p>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <!-- Facebook -->
+                                        <a type="button" class="btn btn-floating btn-md"
+                                            style="background-color: #efe8e7; color: #6d6c76; border-radius: 50%;"><i
+                                                class="fab fa-facebook"></i></a>
+                                        <!-- Dribbble -->
+                                        <a type="button" class="btn btn-floating btn-md"
+                                            style="background-color: #efe8e7; color: #6d6c76; border-radius: 50%;"><i
+                                                class="fab fa-x"></i></a>
+                                        <!-- Twitter -->
+                                        <a type="button" class="btn btn-floating btn-md"
+                                            style="background-color: #efe8e7; color: #6d6c76; border-radius: 50%;"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <!-- Google + -->
+                                        <a type="button" class="btn btn-floating btn-md"
+                                            style="background-color: #efe8e7; color: #6d6c76; border-radius: 50%;"><i
+                                                class="fab fa-youtube"></i></a>
+                                        <!-- Linkedin -->
+                                        <a type="button" class="btn btn-floating btn-md"
+                                            style="background-color: #efe8e7; color: #6d6c76; border-radius: 50%;"><i
+                                                class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+                        </div>
+                        </section>
+                        <!-- Section: Links  -->
+
+                        <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+                </footer>
+
+            </div>
+        </div>
+        <!-- End of .container -->
+    </div>
+    </div>
+    <div class="p-4 d-flex justify-content-between" style="background-color: #f5eeec; border-top: 1px solid #ebe4e2;">
+        <span class="mx-5 px-3 mt-2">© Copyright <span style="font-weight: 500;">My Website</span> All Rights
+            Reserved</span>
+        <span>
+            <span class="d-flex">
+                <p>
+                    <a href="#!" class="mx-3" style="font-size: 14px; text-decoration: none; color: #a27d77;">Privacy
+                        Policy</a>
+                </p>
+                <p>
+                    <a href="#!" class="mx-3" style="font-size: 14px; text-decoration: none; color: #a27d77;">Terms of
+                        Service</a>
+                </p>
+                <p>
+                    <a href="#!" class="mx-3" style="font-size: 14px; text-decoration: none; color: #a27d77;">Cookie
+                        Policy</a>
+                </p>
+            </span>
+            <p class="d-flex justify-content-end">
+                <span class="mx-1 mt-0" style="color: #a27d77; font-size: 14px;">Designed by</span><a href="#!"
+                    style="text-decoration: none; color: #eb5f2d; font-size: 14px;">BootstrapMade</a>
+            </p>
+        </span>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+            // Initialization for ES Users
+            import { Tab, initMDB } from "mdb-ui-kit";
+
+            initMDB({ Tab });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                if (!window.matchMedia('(hover: hover)').matches) return;
+
+                const toggles = document.querySelectorAll('.navbar .dropdown, .navbar .dropend');
+                toggles.forEach(el => {
+                    const trigger = el.querySelector('[data-bs-toggle="dropdown"]');
+                    if (!trigger) return;
+                    const dd = bootstrap.Dropdown.getOrCreateInstance(trigger, { autoClose: 'outside' });
+
+                    el.addEventListener('mouseenter', () => dd.show());
+                    el.addEventListener('mouseleave', () => dd.hide());
+                });
+            });
+        </script>
+</body>
+
+</html>

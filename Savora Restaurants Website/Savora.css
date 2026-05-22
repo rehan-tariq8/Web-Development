@@ -1,0 +1,531 @@
+/* Global image zoom hover */
+img {
+    transform-origin: center center;
+    transition: transform 0.35s ease;
+}
+
+/* Only apply hover zoom on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    img:hover {
+        transform: scale(1.07);
+    }
+}
+
+/* Accessibility: respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    img {
+        transition: none !important;
+    }
+}
+
+/* Optional: add this class to any image you DON'T want to zoom */
+img.no-zoom:hover {
+    transform: none !important;
+}
+
+/* Clip zoomed images to the card */
+.card {
+    overflow: hidden;
+}
+
+/* Zoomable targets inside cards */
+.card .card-img,
+.card .card-img-top,
+.card .card-img-bottom,
+.card>img,
+.card .position-relative>img {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.35s ease;
+    will-change: transform;
+}
+
+/* Hover zoom (only on hover-capable devices) */
+@media (hover: hover) and (pointer: fine) {
+
+    .card:hover .card-img,
+    .card:hover .card-img-top,
+    .card:hover .card-img-bottom,
+    .card:hover>img,
+    .card:hover .position-relative>img {
+        transform: scale(1.08);
+    }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .card .card-img,
+    .card .card-img-top,
+    .card .card-img-bottom,
+    .card>img,
+    .card .position-relative>img {
+        transition: none !important;
+    }
+}
+
+/* Opt-out for any specific image */
+.card img.no-zoom,
+.card:hover img.no-zoom {
+    transform: none !important;
+}
+
+/* Lift effect for cards and buttons */
+.card,
+.btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+        background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .btn:active {
+        transform: translateY(0);
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.10);
+    }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .card,
+    .btn {
+        transition: none !important;
+    }
+}
+
+/* Brand primary (optional): align Bootstrap primary with your orange */
+:root {
+    --bs-primary: #eb5f2d;
+}
+
+/* Generic "outline fills with its outline color" using currentColor.
+   Works when the outline button's text color equals its outline color. */
+@media (hover: hover) and (pointer: fine) {
+
+    .btn[class*="btn-outline-"]:hover,
+    .btn[class*="btn-outline-"]:focus {
+        background-color: currentColor;
+        color: #fff !important;
+        border-color: currentColor;
+    }
+}
+
+/* Explicit rules for standard outline variants (covers cases where text color isn't set) */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: #fff !important;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    color: #fff !important;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    background-color: var(--bs-success) !important;
+    border-color: var(--bs-success) !important;
+    color: #fff !important;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    background-color: var(--bs-danger) !important;
+    border-color: var(--bs-danger) !important;
+    color: #fff !important;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus {
+    background-color: var(--bs-warning) !important;
+    border-color: var(--bs-warning) !important;
+    color: #212529 !important;
+    /* better contrast than white on yellow */
+}
+
+.btn-outline-info:hover,
+.btn-outline-info:focus {
+    background-color: var(--bs-info) !important;
+    border-color: var(--bs-info) !important;
+    color: #fff !important;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+    background-color: var(--bs-dark) !important;
+    border-color: var(--bs-dark) !important;
+    color: #fff !important;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    background-color: var(--bs-light) !important;
+    border-color: var(--bs-light) !important;
+    color: #212529 !important;
+    /* readable on light background */
+}
+
+/* Slight indent for the nested menu */
+.dropdown-menu .dropend>.dropdown-menu {
+    margin-left: .25rem;
+}
+
+/* In the collapsed mobile navbar, keep menus in flow so nothing gets cut off */
+@media (max-width: 991.98px) {
+    .navbar .dropdown-menu {
+        position: static !important;
+        float: none;
+    }
+
+    .navbar .dropend .dropdown-menu {
+        margin-left: 1rem;
+        /* visual indent for the deep menu */
+    }
+}
+
+.navigation-items {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+/* Style for multi-level dropdown */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+}
+
+.book-button {
+    background-color: #eb5f2d;
+    border: none;
+    width: 140px;
+    border-radius: 30px;
+}
+
+.hero {
+    background-color: #fff9f7;
+    height: 100%;
+}
+
+.head {
+    color: #291812;
+    font-family: 'Bitter', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.books-button {
+    background-color: #eb5f2d;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.menu-button {
+    color: #eb5f2d;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #eb5f2d;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.Executive {
+    position: relative;
+}
+
+.Executive img {
+    border-radius: 10px;
+    border: none;
+}
+
+.Executive .card {
+    position: absolute;
+    top: 170px;
+    left: 300px;
+    background-color: #eb5f2d;
+}
+
+.short-text {
+    color: #eb5f2d;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.long-text {
+    font-family: 'Bitter', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.menu-tabs .nav-link {
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin: 0 8px;
+    font-weight: 500;
+    color: #222;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+/* Active tab */
+.menu-tabs .nav-link.active {
+    background-color: #e65c2e;
+    /* orange */
+    color: #fff;
+    border-color: #e65c2e;
+    box-shadow: 0px 5px 15px rgba(230, 92, 46, 0.4);
+}
+
+/* Hover effect */
+.menu-tabs .nav-link:hover {
+    border-color: #e65c2e;
+    color: #e65c2e;
+}
+
+/* Icons */
+.menu-tabs .nav-link i {
+    font-size: 18px;
+}
+
+.gallery-tabs .nav-link {
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin: 0 8px;
+    font-weight: 500;
+    color: #222;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+/* Active tab */
+.gallery-tabs .nav-link.active {
+    background-color: #e65c2e;
+    /* orange */
+    color: #fff;
+    border-color: #e65c2e;
+    box-shadow: 0px 5px 15px rgba(230, 92, 46, 0.4);
+}
+
+/* Hover effect */
+.gallery-tabs .nav-link:hover {
+    border-color: #e65c2e;
+    color: #e65c2e;
+}
+
+/* Icons */
+.gallery-tabs .nav-link i {
+    font-size: 18px;
+}
+
+.items {
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.items img {
+    border-radius: 20px 20px 0 0;
+    height: 250px;
+}
+
+.items .card-body {
+    height: 200px;
+}
+
+.card-head {
+    font-family: 'Bitter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.svg {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff6b6b;
+    ;
+}
+
+.svg svg {
+    position: absolute;
+}
+
+.circle1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #51cf66;
+    ;
+}
+
+.circle2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #74c0fc;
+    ;
+}
+
+.circle3 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffd43b;
+}
+
+.circle4 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #fce7e0;
+}
+
+.circle5 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fce7e0;
+}
+
+.Testimonials {
+    background-color: #fff9f7;
+}
+
+.Testimonial-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Testimonial-card strong {
+    font-family: 'Bitter', sans-serif;
+    font-weight: 600;
+}
+
+.Testimonial-card svg {
+    color: #e65c2e;
+}
+
+.Details {
+    position: relative;
+}
+
+.Details svg {
+    position: absolute;
+}
+
+.square {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #fce7e0;
+}
+
+.square1 {
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+    background-color: #c55026;
+}
+
+
+
+.pricing-card {
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.pricing-card .features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.pricing-card .features li {
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card .btn {
+    margin-top: 1rem;
+}
+
+.features {
+    text-align: left;
+}
+
+.pricing-card.free {
+    border: none;
+}
+
+.pricing-card.gold {
+    border: 3px solid #e65c2e;
+}
+
+.pricing-card.platinum {
+    border: none;
+}
