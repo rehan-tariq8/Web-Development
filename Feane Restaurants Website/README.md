@@ -34,7 +34,7 @@ This project was created as a frontend development practice project to improve U
 
 ```bash
 Feane/
-│── index.html
+│── Feane.html
 │── Feane.css
 │── /Images
 │   ├── hero-bg.jpg
