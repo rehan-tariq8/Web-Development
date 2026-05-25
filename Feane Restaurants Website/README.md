@@ -93,7 +93,7 @@ git clone <your-repository-link>
 
 2. Open the project folder
 
-3. Run `index.html` in your browser
+3. Run `Feane.html` in your browser
 
 ---
 
