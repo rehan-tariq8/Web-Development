@@ -3,12 +3,11 @@ body {
 }
 
 .bg-img {
-  background: url(Feane/hero-bg.jpg);
+  background: url(Images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
   height: 600px;
 }
-
 .burger {
   background-color: #232830;
 }
@@ -66,5 +65,3 @@ body {
   height: 50px;
   border: 1px solid black;
 }
-
-
